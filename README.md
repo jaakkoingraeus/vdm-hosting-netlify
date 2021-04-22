@@ -1,3 +1,40 @@
+# README
+
+## Running fist time
+
+1.  Install Node.js 14 LTS, long term support (you don't need Chocolatey when prompted)
+2.  Clone this repository
+3.  In the root directory of this project, run `npm install`
+4.  Once installation finishes, run `npm start`
+5.  Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+6.  End testing ctrl + c
+
+See the end of this file for more info on npm and create-react-app.
+
+## Project structure
+
+`
+Root
+└── App
+    ├── Navbar
+    ├── Frontpage
+    │   ├── FrontpageTextContainer
+    │   └── Video
+    ├── Search
+    │   ├── SearchBarContainer
+    |   ├── CarouselContainer
+    │   └── Overlay
+    ├── Blogs
+    │   ├── Header
+    │   └── BlogContainer  
+    ├── Comments
+    │   ├── Header
+    │   └── CommentContainer  
+    └── About
+        ├── Header
+        └── BlogContainer  
+`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
