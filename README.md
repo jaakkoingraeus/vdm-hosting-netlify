@@ -13,7 +13,7 @@ See the end of this file for more info on npm and create-react-app.
 
 ## Project structure
 
-`
+```
 Root
 └── App
     ├── Navbar
@@ -33,7 +33,7 @@ Root
     └── About
         ├── Header
         └── BlogContainer  
-`
+```
 
 # Getting Started with Create React App
 
