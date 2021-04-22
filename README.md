@@ -22,17 +22,30 @@ Root
     │   └── Video
     ├── Search
     │   ├── SearchBarContainer
+    │   |   ├── SearchBar
+    │   |   └── SearchButton
     |   ├── CarouselContainer
+    |   |   ├── Tile
+    |   |   |   └── ImageButton
+    |   |   ├── Tile
+    |   |   |   └── ...
+    |   |   └── ...
     │   └── Overlay
     ├── Blogs
     │   ├── Header
-    │   └── BlogContainer  
+    │   └── BlogContainer
+    |       ├── BlogTile
+    |       |   ├── Image
+    |       |   └── BlogTitle
+    |       ├── BlogTile
+    |       |   └── ...
+    |       └── ...  
     ├── Comments
     │   ├── Header
     │   └── CommentContainer  
     └── About
         ├── Header
-        └── BlogContainer  
+        └── AboutContainer  
 ```
 
 # Getting Started with Create React App
