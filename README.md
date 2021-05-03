@@ -1,6 +1,6 @@
 # README
 
-## Running fist time
+## Running first time
 
 1.  Install Node.js 14 LTS, long term support (you don't need Chocolatey when prompted)
 2.  Clone this repository
@@ -11,7 +11,7 @@
 
 See the end of this file for more info on npm and create-react-app.
 
-## Project structure
+## Website Structure
 
 ```
 Root
@@ -42,7 +42,13 @@ Root
     |       └── ...  
     ├── Comments
     │   ├── Header
-    │   └── CommentContainer  
+    │   ├── CommentContainer  
+    |   |   ├── Comment
+    |   |   ├── Comment
+    |   |   └── ...
+    |   └── CommentForm
+    |       ├── CommentField
+    |       └── SendButton
     └── About
         ├── Header
         └── AboutContainer  
