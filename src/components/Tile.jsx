@@ -19,10 +19,11 @@ function Tile(props){
     </Card.Body>
     </div>
     }
+
     return(
-        <Card style={{ maxWidth: '18rem' }}>
-        {content}
-      </Card>
+    <Card style={{ maxWidth: '18rem' }} onClick={ () => props.clickFunction()}>
+      {content}
+    </Card>
     )
 }
 export default Tile

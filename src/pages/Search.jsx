@@ -1,16 +1,23 @@
 import React from 'react'
 import Tile from "../components/Tile.jsx";
 import Overlay from '../components/Overlay';
-import {Form, FormControl, Button, CardDeck, Container, Row, Col, Fade } from 'react-bootstrap'
+import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
 import { useState } from "react";
 
 function Search(props) {
   //status of overlay
-  const [open, setOpen] = useState(true);
+  const [openOverlay, setOpenOverlay] = useState(true);
+  const [overlayData, setOverlayData] = useState({title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"});
 
   const changeOverlay = () => {
-    setOpen(!open)
-    console.log(open)
+    setOpenOverlay(!openOverlay)
+    console.log(openOverlay)
+  }
+
+  const changeOverlayData = (input) => {
+    setOverlayData(input)
+    if(!openOverlay)
+      changeOverlay()
   }
 
     return(
@@ -30,15 +37,15 @@ function Search(props) {
         <Col>
         <div className="CarouselContainer">
         <CardDeck>
-          <Tile imagesrc="a" text=""></Tile>
-          <Tile imagesrc="a" text="a"></Tile>
-          <Tile imagesrc="a" text="a"></Tile>
+          <Tile imagesrc="a" text="" clickFunction={ () => changeOverlayData({title:"aaaaa", text:"bbbbbbbb", imagesrc:"dddd"})}></Tile>
+          <Tile imagesrc="a" text="a" clickFunction={ () => changeOverlayData({title:"cccccc", text:"ddddd", imagesrc:"eeeee"})}></Tile>
+          <Tile imagesrc="a" text="a" clickFunction={ () => changeOverlayData({title:"gggggg", text:"hhhhhhh", imagesrc:"iuuiiiiiii"})}></Tile>
         </CardDeck>
         </div>
         </Col>
       </Row>
     </Container>
-    <Overlay open={open} data={{title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"}} closeFunction = {changeOverlay}></Overlay>
+    <Overlay open={openOverlay} data={overlayData} closeFunction = {changeOverlay}></Overlay>
   </div>
     )
 }
