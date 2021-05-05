@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../components/Header'
+import Header from '../components/Header.jsx'
 function Comments(props) {
     return(
     <div className="page">

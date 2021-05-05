@@ -1,0 +1,35 @@
+import React from 'react'
+import { Jumbotron, Media,  Button, Container, Fade } from 'react-bootstrap'
+/*
+* props is given a JSON of {title:"", text:"", imagesrc:""} as data
+*
+*/
+function Overlay(props) {
+  const title = props.data.title
+  const text = props.data.text
+  const imagesrc = props.data.imagesrc
+    return(
+        <Fade in={props.open} appear={true}>
+        <Jumbotron>
+             <Button onClick={() => props.closeFunction()} disabled={!props.open}>x</Button>
+            <Media>
+                <Media.Body>
+                <h5>{title}</h5>
+                    <p>
+                        {text}
+                    </p>
+                </Media.Body>
+                <img
+                    width={64}
+                    height={64}
+                    className="mr-3"
+                    src={imagesrc}
+                    alt="Generic placeholder"
+                />
+            </Media>
+            
+        </Jumbotron>
+        </Fade>
+    )
+}
+export default Overlay

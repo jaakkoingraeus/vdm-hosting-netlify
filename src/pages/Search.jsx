@@ -1,8 +1,18 @@
 import React from 'react'
 import Tile from "../components/Tile.jsx";
-import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
+import Overlay from '../components/Overlay';
+import {Form, FormControl, Button, CardDeck, Container, Row, Col, Fade } from 'react-bootstrap'
+import { useState } from "react";
 
 function Search(props) {
+  //status of overlay
+  const [open, setOpen] = useState(true);
+
+  const changeOverlay = () => {
+    setOpen(!open)
+    console.log(open)
+  }
+
     return(
     <div className="page">
     <Container>
@@ -28,6 +38,7 @@ function Search(props) {
         </Col>
       </Row>
     </Container>
+    <Overlay open={open} data={{title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"}} closeFunction = {changeOverlay}></Overlay>
   </div>
     )
 }

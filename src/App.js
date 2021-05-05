@@ -12,7 +12,7 @@ function App() {
       <Frontpage></Frontpage>
       <Search></Search>
       <Blogs></Blogs>
-     <Comments></Comments>
+      <Comments></Comments>
       <About></About>
     </div>
   );

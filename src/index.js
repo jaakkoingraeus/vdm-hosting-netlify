@@ -5,9 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  //not rendered in strict mode due to react-bootstrap transition dependency
+    <App />,
   document.getElementById('root')
 );
 
