@@ -8,7 +8,9 @@ function Frontpage(props) {
         <div className="FrontpageTextContainer d-flex justify-content-center">
             <h1>What even is this</h1>
         </div>
-        <div className="Video"></div>
+        <video autoPlay muted loop id="frontpageVideo">
+            <source src="frontpageVideoTemp.mp4" type="video/mp4"/>
+        </video>
      </div>
       </ScrollableAnchor>
     )

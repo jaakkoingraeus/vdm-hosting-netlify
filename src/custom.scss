@@ -18,6 +18,15 @@ body {
     height: 100vh;
     padding: 10vh 5vw;
   }
+
+  #frontpageVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

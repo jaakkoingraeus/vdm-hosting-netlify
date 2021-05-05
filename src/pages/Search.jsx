@@ -5,7 +5,6 @@ import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-b
 import { useState } from "react";
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
 
-
 function Search(props) {
   //status of overlay
   const [openOverlay, setOpenOverlay] = useState(true);
@@ -56,6 +55,6 @@ function Search(props) {
     <Overlay open={openOverlay} data={overlayData} closeFunction = {changeOverlay}></Overlay>
   </div>
   </ScrollableAnchor>
-    )
+  )
 }
 export default Search
