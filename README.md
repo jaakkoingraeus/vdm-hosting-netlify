@@ -16,7 +16,7 @@ See the end of this file for more info on npm and create-react-app.
 ```
 Root
 └── App
-    ├── Navbar
+    ├── NavbarContainer
     ├── Frontpage
     │   ├── FrontpageTextContainer
     │   └── Video

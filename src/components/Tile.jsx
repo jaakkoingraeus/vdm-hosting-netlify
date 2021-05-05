@@ -21,7 +21,6 @@ function Tile(props){
     }
     return(
         <Card style={{ maxWidth: '18rem' }}>
-        
         {content}
       </Card>
     )
