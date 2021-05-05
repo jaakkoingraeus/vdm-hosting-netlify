@@ -10,7 +10,7 @@ function Search(props) {
   //status of overlay
   const [openOverlay, setOpenOverlay] = useState(true);
   const [overlayData, setOverlayData] = useState({title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"});
-
+  const [searchText, setSearchText] = useState("");
   const changeOverlay = () => {
     setOpenOverlay(!openOverlay)
     console.log(openOverlay)
@@ -22,17 +22,22 @@ function Search(props) {
       changeOverlay()
   }
 
+  const search = (input) => {
+    setSearchText(input.target.value)
+  }
+
     return(
   <ScrollableAnchor id={'search'}>
-    <div className="page">
+    <div className="page d-flex flex-column justify-content-center">
     <Container>
       <Row className="justify-content-center">
         <Col>
         <div className="SearchBarContainer">
-        <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-        </Form>
+          <Form inline>
+              <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={search}/>
+              <Button variant="outline-success">Search</Button>
+              <div>{searchText}</div>
+          </Form>
         </div>
         </Col>
       </Row>

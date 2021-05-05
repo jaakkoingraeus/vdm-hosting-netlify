@@ -12,6 +12,7 @@ function NavbarContainer(props) {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
+            <Nav.Link href="#frontpage">Home</Nav.Link>
             <Nav.Link href="#search">Search</Nav.Link>
             <Nav.Link href="#blogs">Blogs</Nav.Link>
             <Nav.Link href="#comments">Comments</Nav.Link>
