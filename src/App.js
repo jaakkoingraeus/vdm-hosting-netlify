@@ -1,4 +1,3 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarContainer from "./components/NavbarContainer.jsx";
 import Blogs from './pages/Blogs';
 import Comments from './pages/Comments';
