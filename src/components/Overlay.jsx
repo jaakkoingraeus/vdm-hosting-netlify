@@ -9,8 +9,9 @@ function Overlay(props) {
   const title = props.data.title
   const text = props.data.text
   const imagesrc = props.data.imagesrc
+  let pointerevents = props.open ? {pointerEvents:'auto'} : {pointerEvents:'none'}
     return(
-        <Fade in={props.open} appear={true}>
+        <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
         <Jumbotron>
              <Button onClick={() => props.closeFunction()} disabled={!props.open}>x</Button>
             <Media>
