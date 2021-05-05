@@ -1,9 +1,16 @@
 import React from 'react'
-
+//returns a header with a nice colored underline
+/*
+* props.borderColor - border color in hex or rgb
+* props.text - header text as string
+*/
 function Header(props) {
 
     const borderBottom = {
-        borderColor: props.borderColor
+        borderStyle:'solid',
+        borderWidth: '0px 0px 4px 0px',
+        borderColor: props.borderColor,
+        width: 'min-content'
     }
 
     return(
