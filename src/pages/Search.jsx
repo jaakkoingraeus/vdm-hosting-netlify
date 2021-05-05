@@ -3,6 +3,8 @@ import Tile from "../components/Tile.jsx";
 import Overlay from '../components/Overlay';
 import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
 import { useState } from "react";
+import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
+
 
 function Search(props) {
   //status of overlay
@@ -21,6 +23,7 @@ function Search(props) {
   }
 
     return(
+  <ScrollableAnchor id={'search'}>
     <div className="page">
     <Container>
       <Row className="justify-content-center">
@@ -47,6 +50,7 @@ function Search(props) {
     </Container>
     <Overlay open={openOverlay} data={overlayData} closeFunction = {changeOverlay}></Overlay>
   </div>
+  </ScrollableAnchor>
     )
 }
 export default Search

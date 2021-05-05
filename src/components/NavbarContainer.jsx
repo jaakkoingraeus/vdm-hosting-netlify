@@ -8,12 +8,14 @@ import Button from 'react-bootstrap/Button'
 function NavbarContainer(props) {
     return(
 <Navbar bg="light" expand="lg" fixed="top">
-    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+    <Navbar.Brand href="#frontpage">React-Bootstrap</Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
+            <Nav.Link href="#search">Search</Nav.Link>
+            <Nav.Link href="#blogs">Blogs</Nav.Link>
+            <Nav.Link href="#comments">Comments</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Jumbotron, Media,  Button, Container, Fade } from 'react-bootstrap'
+import { Jumbotron, Media,  Button, Fade } from 'react-bootstrap'
 /*
 * props is given a JSON of {title:"", text:"", imagesrc:""} as data
-*
+* props.closeFunction - function to close & open 
+* props.open - if overlay is open boolean
 */
 function Overlay(props) {
   const title = props.data.title
