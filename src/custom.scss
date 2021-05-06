@@ -5,6 +5,7 @@ $dark: #000000;
 $light: #fff;
 $primary: #333333;
 
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -53,6 +54,20 @@ body {
 .navLinkCustom {
   font-size: 1.7rem;
   margin: 0 1.5rem;
+}
+
+//FRONTPAGE
+.callToActionText {
+  margin: 2rem 0;
+  display: block;
+  text-align: center;
+  transform: rotateZ(-1deg);
+  color: $light;
+  font-size: 3rem;
+}
+
+.sloganLink {
+  color: $light;
 }
   
 //Importataan alkuperäinen bootstrap styling
