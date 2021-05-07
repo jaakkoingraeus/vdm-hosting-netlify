@@ -81,6 +81,25 @@ body {
 .overlayText {
   font-size: 1rem;
 }
+
+@media only screen and (max-width: 860px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2000;
+  }
+
+  .overlayTitle {
+    font-size: 1.8rem;
+  }
+  
+  .overlayText {
+    font-size: 1rem;
+  }
+}
   
 //Importataan alkuperäinen bootstrap styling
 @import '~bootstrap/scss/bootstrap.scss';

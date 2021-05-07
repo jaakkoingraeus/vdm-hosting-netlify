@@ -14,7 +14,7 @@ function Overlay(props) {
         <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
         <Jumbotron>
              <Button className="ml-3" onClick={() => props.closeFunction()} disabled={!props.open}>x</Button>
-            <Media>
+            <Media className="flex-column">
                 <Media.Body>
                 <h5 className="p-3 overlayTitle">{title}</h5>
                     <p className="p-3 overlayText">
@@ -24,7 +24,7 @@ function Overlay(props) {
                 <img
                     width="64"
                     height="64"
-                    className="mr-3"
+                    className="mr-3 overlayImg"
                     src={imagesrc}
                     alt="Generic placeholder"
                 />
