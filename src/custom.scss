@@ -32,11 +32,12 @@ body {
 
   .overlay{
     position: absolute;
+    margin-right: auto;
+    margin-left: auto;
     left: 0;
-    bottom: 0;
+    right: 0;
     width: 80%;
-    height: 80%;
-    margin: 10%;
+    max-width: 100ch;
   }
   
   code {
@@ -69,6 +70,16 @@ body {
 .sloganLink {
   color: $light;
   text-decoration: underline;
+}
+
+//SEARCH PAGE
+
+.overlayTitle {
+  font-size: 1.8rem;
+}
+
+.overlayText {
+  font-size: 1rem;
 }
   
 //Importataan alkuperäinen bootstrap styling

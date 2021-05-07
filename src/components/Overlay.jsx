@@ -1,5 +1,5 @@
 import React from 'react'
-import { Jumbotron, Media,  Button, Fade } from 'react-bootstrap'
+import { Jumbotron, Media,  Button, Fade, Image } from 'react-bootstrap'
 /*
 * props is given a JSON of {title:"", text:"", imagesrc:""} as data
 * props.closeFunction - function to close & open 
@@ -13,17 +13,17 @@ function Overlay(props) {
     return(
         <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
         <Jumbotron>
-             <Button onClick={() => props.closeFunction()} disabled={!props.open}>x</Button>
+             <Button className="ml-3" onClick={() => props.closeFunction()} disabled={!props.open}>x</Button>
             <Media>
                 <Media.Body>
-                <h5>{title}</h5>
-                    <p>
+                <h5 className="p-3 overlayTitle">{title}</h5>
+                    <p className="p-3 overlayText">
                         {text}
                     </p>
                 </Media.Body>
                 <img
-                    width={64}
-                    height={64}
+                    width="64"
+                    height="64"
                     className="mr-3"
                     src={imagesrc}
                     alt="Generic placeholder"
