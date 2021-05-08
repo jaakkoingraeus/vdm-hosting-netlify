@@ -7,9 +7,9 @@ function Blogs(props) {
     return(
     <ScrollableAnchor id={'blogs'}>
     <div className="page">
-        <Header text="heeeee" borderColor="#0F0F0F"></Header>
-         <Tile imagesrc="a" text="This is kinda bad" clickFunction={ () => null}></Tile>
-         <Tile imagesrc="a" text="Meh to the 10th degree" clickFunction={ () => null }></Tile>
+        <Header text="Blogs" borderColor="#0F0F0F"></Header>
+         <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => null}></Tile>
+         <Tile title="React and chill?" author="Juho Alin" subject="Verkkojulkaisemisen perusteet" imagesrc="/img/blog2.png" clickFunction={ () => null }></Tile>
     </div>
     </ScrollableAnchor>
     )

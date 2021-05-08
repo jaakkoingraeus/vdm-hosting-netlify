@@ -4,6 +4,7 @@ $warning: #ffe749;
 $dark: #000000;
 $light: #fff;
 $primary: #333333;
+$secondary: #F5F5F5;
 
 
 body {
@@ -100,6 +101,9 @@ body {
     font-size: 1rem;
   }
 }
+
+//BLOGS
+
   
 //Importataan alkuperäinen bootstrap styling
 @import '~bootstrap/scss/bootstrap.scss';

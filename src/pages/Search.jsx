@@ -7,12 +7,12 @@ import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/p
 
 function Search(props) {
   //status of overlay
-  const [openOverlay, setOpenOverlay] = useState(true);
+  const [openOverlay, setOpenOverlay] = useState(false);
   const [overlayData, setOverlayData] = useState({title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"});
   const [searchText, setSearchText] = useState("");
   const changeOverlay = () => {
     setOpenOverlay(!openOverlay)
-    console.log(openOverlay)
+    console.log('Open overlay: ', openOverlay)
   }
 
   const changeOverlayData = (input) => {
