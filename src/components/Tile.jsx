@@ -5,8 +5,13 @@ function Tile(props){
 
     const author = props.author
     let content = ""
+    let authorBox = ""
 
-    console.log(props.imagesrc)
+    if (props.author !== "") {
+      authorBox = <Card.Text>
+        {props.author ? `By ${props.author}` : ""}
+      </Card.Text>
+    }
   
     if (author === "") {
     content = <div>
@@ -22,9 +27,7 @@ function Tile(props){
         <Card.Title>
           {props.title}
         </Card.Title>
-        <Card.Text>
-          By {props.author}
-        </Card.Text>
+          {authorBox}
     </Card.Body>
     </div>
     }
