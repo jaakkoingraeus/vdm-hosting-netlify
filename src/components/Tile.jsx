@@ -13,7 +13,7 @@ function Tile(props){
       </Card.Text>
     }
   
-    if (author === "") {
+    if (author === "" || props.text === "") {
     content = <div>
     <Card.Img variant="top" src={props.imagesrc} />
     </div>
