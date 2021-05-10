@@ -19,7 +19,7 @@ function Tile(props){
     </div>
     } else {
     content = <div>
-    <Card.Img variant="top" src={props.imagesrc} />
+    <Card.Img variant="top" src={props.imagesrc}/>
     <Card.Body>
         <Card.Subtitle className="mb-2 text-success">
           {props.subject}
