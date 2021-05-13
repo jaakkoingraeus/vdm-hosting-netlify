@@ -19,7 +19,8 @@ body {
   .page {
     position: relative;
     height: 100vh;
-    padding: 10vh 5vw;
+    padding: 15vh 5vw;
+    overflow: hidden;
   }
 
   #frontpageVideo {
@@ -104,6 +105,20 @@ body {
 
 //BLOGS
 
+.blogContainer {
+  display: flex;
+  padding: 5% 10% 10% 10%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogContainer {
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
   
 //Importataan alkuperäinen bootstrap styling
 @import '~bootstrap/scss/bootstrap.scss';

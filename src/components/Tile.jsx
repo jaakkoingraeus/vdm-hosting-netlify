@@ -33,7 +33,7 @@ function Tile(props){
     }
 
     return(
-    <Card style={{ maxWidth: '18rem' }} className="m-3 p-3 bg-secondary text-dark" border="secondary" onClick={ () => props.clickFunction()}>
+    <Card style={{ maxWidth: '18rem', filter: 'drop-shadow(5px 5px 1px #999999)' }} className="m-3 p-3 bg-secondary text-dark" border="secondary" onClick={ () => props.clickFunction()}>
       {content}
     </Card>
     )
