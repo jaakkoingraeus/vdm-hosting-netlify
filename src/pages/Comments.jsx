@@ -25,7 +25,10 @@ function Comments(props) {
     <div className="page">
         <Container>
             <Row>
-        <Header text="otsikko" borderColor="#000000"></Header>
+        <Header text="Kommentoi" borderColor="#000000"></Header>
+        </Row>
+        <Row>
+            <h5>Osallistu keskusteluun #viherpesu</h5>
         </Row>
         <Row>
             <Col>
@@ -43,20 +46,20 @@ function Comments(props) {
             <Form>
             <Row>
                 <Col>
-                <Form.Control type="text" placeholder="Nickname" className="mr-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
+                <Form.Control type="text" placeholder="Nickname" className="me-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
                 </Col>
                 <Col xs={3}>
-                <Button variant="outline-success" className="mr-sm-2 shadow-sm" onClick={() => addComment()}>Submit</Button>
+                <Button variant="outline-success" className="me-sm-2 shadow-sm" onClick={() => addComment()}>Submit</Button>
                 </Col>
             </Row>
-            <Row>
+            <Row className="mt-3">
                 <Col>
               <Form.Control type="text" placeholder="Text" maxLength="140" as="textarea" className="shadow-sm" onChange={ (x) => updateCommentFieldText(x)}/>
               </Col>
               </Row>
         </Form>
                 </Col>
-                <Col>
+                <Col className="d-none d-sm-none d-md-none d-lg-block">
                     twittahh
                 </Col>
         </Row>

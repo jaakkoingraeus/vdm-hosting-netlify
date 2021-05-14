@@ -10,7 +10,8 @@ function Header(props) {
         borderStyle:'solid',
         borderWidth: '0px 0px 4px 0px',
         borderColor: props.borderColor,
-        width: 'min-content',
+        width: 'auto',
+        maxWidth: 'max-content',
         marginBottom: '30px'
     }
 

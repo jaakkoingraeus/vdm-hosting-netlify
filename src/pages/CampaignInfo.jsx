@@ -23,7 +23,7 @@ function CampaignInfo(props) {
                     </Card.Body>
             </Card>
             </Col>
-            <Col>
+            <Col className="d-none d-sm-none d-md-none d-lg-none d-xl-block">
             <img src="/img/hmArticlePhoto.png"></img>
             </Col>
             </Row>

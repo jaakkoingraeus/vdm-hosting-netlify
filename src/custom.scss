@@ -82,6 +82,12 @@ body {
 
 //SEARCH PAGE
 
+.CarouselContainer {
+  min-height: 50vh;
+  max-height: 50vh;
+  overflow-x: scroll;
+}
+
 .overlayTitle {
   font-size: 1.8rem;
 }
@@ -107,6 +113,12 @@ body {
   .overlayText {
     font-size: 1rem;
   }
+
+  
+.CarouselContainer {
+  overflow-y: scroll;
+}
+
 }
 
 //BLOGS
@@ -125,6 +137,13 @@ body {
   }
   
 }
-  
+
+//Divider
+@media only screen and (max-width: 768px) {
+.dividerText {
+font-size: large;
+}
+}
+
 //Importataan alkuperäinen bootstrap styling
 @import '~bootstrap/scss/bootstrap.scss';
