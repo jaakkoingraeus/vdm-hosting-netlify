@@ -4,7 +4,8 @@ import Overlay from '../components/Overlay';
 import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
 import { useState } from "react";
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
-import Header from '../components/Header.jsx';
+import Header from '../components/Header.jsx'
+import {FaSearch} from 'react-icons/fa'
 
 function Search(props) {
   //searchable database
@@ -49,7 +50,7 @@ function Search(props) {
         <div className="SearchBarContainer">
           <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm" onChange={search}/>
-              <Button variant="outline-success shadow-sm" className="d-none d-sm-block">Search</Button>
+              <Button variant="outline-success shadow-sm" className="d-none d-sm-block"><FaSearch/></Button>
           </Form>
         </div>
       </Row>

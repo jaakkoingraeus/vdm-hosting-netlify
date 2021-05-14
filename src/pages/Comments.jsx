@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Media, Card, CardColumns, Form, Button, Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
+import {FaComment} from 'react-icons/fa'
 
 function Comments(props) {
     const [comments, setComments] = useState([{nickname: 'user1', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:1},{nickname: 'username', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:2},{nickname: 'user3', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:3},{nickname: 'user4', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:4}])
@@ -49,7 +50,7 @@ function Comments(props) {
                 <Form.Control type="text" placeholder="Nickname" className="me-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
                 </Col>
                 <Col xs={3}>
-                <Button variant="outline-success" className="me-sm-2 shadow-sm" onClick={() => addComment()}>Submit</Button>
+                <Button variant="outline-success" className="me-sm-2 shadow-sm" onClick={() => addComment()}><FaComment/></Button>
                 </Col>
             </Row>
             <Row className="mt-3">
