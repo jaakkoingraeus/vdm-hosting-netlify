@@ -16,6 +16,7 @@ function NavbarContainer(props) {
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
             <Nav.Link href="#search" className="navLinkCustom">Vihertutka</Nav.Link>
+            <Nav.Link href="#campaignInfo" className="navLinkCustom">Kampanja</Nav.Link>
             <Nav.Link href="#blogs" className="navLinkCustom">Blogit</Nav.Link>
             <Nav.Link href="#comments" className="navLinkCustom">Keskustelu</Nav.Link>
             <Nav.Link href="#about" className="navLinkCustom">Meistä</Nav.Link>
