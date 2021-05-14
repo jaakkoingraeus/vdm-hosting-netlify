@@ -50,7 +50,6 @@ function Search(props) {
           <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={search}/>
               <Button variant="outline-success">Search</Button>
-              <div>{searchText}</div>
           </Form>
         </div>
       </Row>
@@ -58,10 +57,9 @@ function Search(props) {
       <Container>
       <Row className="mt-2">
         <Col>
-        <div className="CarouselContainer border rounded p-3">
+        <div className="CarouselContainer border rounded p-3 shadow">
         <CardDeck>
-
-          {dataToRender.map( (x) => <Tile imagesrc={x.imagesrc} text={x.text} clickFunction={ () => changeOverlayData(x)}></Tile>)}
+          {dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} text={x.text} clickFunction={ () => changeOverlayData(x)}></Tile>)}
         </CardDeck>
         </div>
         </Col>
