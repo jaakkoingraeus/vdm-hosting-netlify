@@ -4,6 +4,7 @@ import Overlay from '../components/Overlay';
 import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
 import { useState } from "react";
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
+import Header from '../components/Header.jsx';
 
 function Search(props) {
   //searchable database
@@ -31,10 +32,20 @@ function Search(props) {
   const dataToRender = companyData.filter( (x)=> x.title.toLowerCase().includes(searchText.toLowerCase()))
   return(
   <ScrollableAnchor id={'search'}>
-    <div className="page d-flex flex-column justify-content-center">
+    <div className="page d-flex flex-column justify-content-around">
+    <Container className="d-flex flex-column justify-content-between">
+      <Row className="justify-content-center">
+        <Header text="Vihertutka"></Header>
+      </Row>
+    </Container>
     <Container>
       <Row className="justify-content-center">
-        <Col>
+        <div><p>Vihertutkalla etsit bängereitä faktoja super siisteistä aiheista. Ota selvää ja innostu super haippi meiningistä</p>
+        </div>
+      </Row>
+      </Container>
+      <Container>
+      <Row className="justify-content-center">
         <div className="SearchBarContainer">
           <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={search}/>
@@ -42,11 +53,12 @@ function Search(props) {
               <div>{searchText}</div>
           </Form>
         </div>
-        </Col>
       </Row>
+      </Container>
+      <Container>
       <Row className="mt-2">
         <Col>
-        <div className="CarouselContainer">
+        <div className="CarouselContainer border rounded p-3">
         <CardDeck>
 
           {dataToRender.map( (x) => <Tile imagesrc={x.imagesrc} text={x.text} clickFunction={ () => changeOverlayData(x)}></Tile>)}
