@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { Media, Card, CardColumns, Form, FormControl, Button } from 'react-bootstrap'
+import { Media, Card, CardColumns, Form, Button, Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
+import {FaComment} from 'react-icons/fa'
 
 function Comments(props) {
-    const [comments, setComments] = useState([{nickname: 'user1', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'},{nickname: 'user2', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'},{nickname: 'username', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'},{nickname: 'user3', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'},{nickname: 'user4', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'},{nickname: 'user5', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.'}])
-    const [commentField, setCommentField] = useState({nickname:'',text:''});
+    const [comments, setComments] = useState([{nickname: 'user1', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:1},{nickname: 'username', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:2},{nickname: 'user3', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:3},{nickname: 'user4', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:4}])
+    const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:''});
   
     const addComment = () => {
         if(commentField.nickname !== "" && commentField.text !== "")
@@ -13,34 +14,57 @@ function Comments(props) {
     }
 
     const updateCommentFieldNickname = (input) => {
-        setCommentField({nickname: input.target.value, text: commentField.text})
+        setCommentField({nickname: input.target.value, text: commentField.text, timestamp: Date.now()})
     }
 
     const updateCommentFieldText = (input) => {
-        setCommentField({nickname: commentField.nickname , text: input.target.value})
+        setCommentField({nickname: commentField.nickname , text: input.target.value, timestamp: Date.now()})
     }
 
     return(
     <ScrollableAnchor id={'comments'}>
     <div className="page">
-        <Header text="otsikko" borderColor="#000000"></Header>
-        <CardColumns>
-        {comments.slice(0,9).map( (x) => <Card className="p-3" key={x.nickname + Date.now()}>
-                                <Media>
-                                <Media.Body>
-                                    <h5>{x.nickname}</h5>
-                                    <p>
-                                        {x.text}
-                                    </p>
-                                </Media.Body>
-                               </Media>
-                               </Card>)}
-        </CardColumns>
-        <Form inline>
-              <FormControl type="text" placeholder="Nickname" className="mr-sm-2" onChange={updateCommentFieldNickname}/>
-              <FormControl type="text" placeholder="Text" className="mr-sm-2" onChange={updateCommentFieldText}/>
-              <Button variant="outline-success" onClick={() => addComment()}>Submit</Button>
+        <Container>
+            <Row>
+        <Header text="Kommentoi" borderColor="#000000"></Header>
+        </Row>
+        <Row>
+            <h5>Osallistu keskusteluun #viherpesu</h5>
+        </Row>
+        <Row>
+            <Col>
+                {comments.slice(0,3).map( (x ,y) => <Card className="p-3 m-2 shadow-sm" key={x.nickname + x.timestamp + y}>
+                                        <Media>
+                                        <Media.Body>
+                                            <h5>{x.nickname}</h5>
+                                            <p>
+                                                {x.text}
+                                            </p>
+                                        </Media.Body>
+                                    </Media>
+                                    </Card>)}            
+            <br />
+            <Form>
+            <Row>
+                <Col>
+                <Form.Control type="text" placeholder="Nickname" className="me-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
+                </Col>
+                <Col xs={3}>
+                <Button variant="outline-success" className="me-sm-2 shadow-sm" onClick={() => addComment()}><FaComment/></Button>
+                </Col>
+            </Row>
+            <Row className="mt-3">
+                <Col>
+              <Form.Control type="text" placeholder="Text" maxLength="140" as="textarea" className="shadow-sm" onChange={ (x) => updateCommentFieldText(x)}/>
+              </Col>
+              </Row>
         </Form>
+                </Col>
+                <Col className="d-none d-sm-none d-md-none d-lg-block">
+                    twittahh
+                </Col>
+        </Row>
+        </Container>
     </div>
     </ScrollableAnchor>
     )
