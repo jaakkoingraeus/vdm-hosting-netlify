@@ -18,9 +18,9 @@ function Tile(props){
     <Card.Img variant="top" src={props.imagesrc} />
     </div>
     } else {
-    content = <div>
+    content = <div >
     <Card.Img variant="top" src={props.imagesrc}/>
-    <Card.Body>
+    <Card.Body >
         <Card.Subtitle className="mb-2 text-success">
           {props.subject}
         </Card.Subtitle>
@@ -33,7 +33,7 @@ function Tile(props){
     }
 
     return(
-    <Card style={{ maxWidth: '18rem' }} className="m-3 p-3 bg-secondary text-dark" border="secondary" onClick={ () => props.clickFunction()}>
+    <Card style={{ maxWidth: '18rem' }} className="m-3 p-3 bg-secondary text-dark"  border="secondary" onClick={ () => props.clickFunction()}>
       {content}
     </Card>
     )

@@ -9,6 +9,12 @@ import { Jumbotron, Media,  Button, Fade, Image } from 'react-bootstrap'
 function Overlay(props) {
   const title = props.data.title
   const text = props.data.text
+  const natureTitle = props.data.natureTitle
+  const natureText = props.data.natureText
+  const peopleTile = props.data.peopleTitle
+  const peopleText = props.data.peopleText
+  const animalTitle = props.data.animalTitle
+  const animalText = props.data.animalText
   const imagesrc = props.data.imagesrc
   const [mobile, setMobile] = useState(false)
 
@@ -63,10 +69,21 @@ function Overlay(props) {
                     <p className="p-3 overlayText">
                         {text}
                     </p>
+                <h5 className="p-3 overlayTitle">{natureTitle}</h5>
+                     <p className="p-3 overlayText">
+                        {natureText}
+                    </p>
+                <h5 className="p-3 overlayTitle">{peopleTile}</h5>
+                     <p className="p-3 overlayText">
+                        {peopleText}
+                    </p>
+                <h5 className="p-3 overlayTitle">{animalTitle}</h5>
+                     <p className="p-3 overlayText">
+                        {animalText}
+                    </p>
                 </Media.Body>
                 <img
-                    width="64"
-                    height="64"
+                    width="100"
                     className="mr-3 overlayImg"
                     src={imagesrc}
                     alt="Generic placeholder"

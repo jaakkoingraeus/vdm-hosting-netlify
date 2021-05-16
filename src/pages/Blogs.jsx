@@ -13,9 +13,11 @@ function Blogs(props) {
                 <Header text="Blogit" borderColor="#0F0F0F"></Header>
             </Row>
         <Row>
-        <div className="blogContainer">
+        <div className="blogContainer" style={{ maxWidth: '100%'}}>
          <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => null}></Tile>
          <Tile title="React and chill?" author="Juho Alin" subject="Verkkojulkaisemisen perusteet" imagesrc="/img/blog2.png" clickFunction={ () => null }></Tile>
+         <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => null}></Tile>
+
         </div>
         </Row>
         </Container>
