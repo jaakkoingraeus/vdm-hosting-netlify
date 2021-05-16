@@ -41,7 +41,7 @@ function Search(props) {
     </Container>
     <Container>
       <Row className="justify-content-center">
-        <div><p>Vihertutkalla etsit bängereitä faktoja super siisteistä aiheista. Ota selvää ja innostu super haippi meiningistä</p>
+        <div><p>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta.</p>
         </div>
       </Row>
       </Container>
