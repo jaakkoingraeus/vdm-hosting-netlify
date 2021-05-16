@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { Jumbotron, Media,  Button, Fade, Image } from 'react-bootstrap'
+import {Media,  Button, Fade, Image, Container, Row } from 'react-bootstrap'
+import {GrClose} from 'react-icons/gr'
 /*
 * props is given a JSON of {title:"", text:"", imagesrc:""} as data
 * props.closeFunction - function to close & open 
@@ -59,38 +60,47 @@ function Overlay(props) {
   let pointerevents = props.open ? {pointerEvents:'auto'} : {pointerEvents:'none'}
     return(
         <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
-        <Jumbotron>
-             <Button className="ml-3" onClick={ () => {
+           
+        <div>
+        <Button variant="secondary" className="position-absolute top-0 start-0 translate-middle" onClick={ () => {
                 props.closeFunction()
-                }} disabled={!props.open}>x</Button>
-            <Media className={mobile ? "flex-column-reverse" : ""}>
+                }} disabled={!props.open}><GrClose/></Button>
+        <div style={{position:"absolute", top:"0", right:"0", margin:"40px"}}>
+        <img
+            width="100"
+            height="100"
+            src={imagesrc}
+            alt="Generic placeholder"
+        />
+        </div>
+            <Media className={mobile ? "flex-column-reverse p-3 pt-5" : "p-5"}>
+            
                 <Media.Body>
-                <h5 className="p-3 overlayTitle">{title}</h5>
-                    <p className="p-3 overlayText">
+                    <Container>
+                        <Row>
+                    <h5 className="pb-3 pl-1 overlayTitle">{title}</h5>
+                </Row>
+                </Container>
+                
+                    <p className="p-1 pb-3 overlayText">
                         {text}
                     </p>
-                <h5 className="p-3 overlayTitle">{natureTitle}</h5>
-                     <p className="p-3 overlayText">
+                <h5>{natureTitle}</h5>
+                     <p className="p-1 pb-3 overlayText">
                         {natureText}
                     </p>
-                <h5 className="p-3 overlayTitle">{peopleTile}</h5>
-                     <p className="p-3 overlayText">
+                <h5>{peopleTile}</h5>
+                     <p className="p-1 pb-3 overlayText">
                         {peopleText}
                     </p>
-                <h5 className="p-3 overlayTitle">{animalTitle}</h5>
-                     <p className="p-3 overlayText">
+                <h5>{animalTitle}</h5>
+                     <p className="p-1 overlayText">
                         {animalText}
                     </p>
                 </Media.Body>
-                <img
-                    width="100"
-                    className="mr-3 overlayImg"
-                    src={imagesrc}
-                    alt="Generic placeholder"
-                />
             </Media>
             
-        </Jumbotron>
+        </div>
         </Fade>
     )
 }
