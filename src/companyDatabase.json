@@ -2,23 +2,22 @@
     "Data": [
     {
         "title":"Zara",
-        "header":"Vihreys",
         "text":"Zara on maailmanlaajuisesti tunnettu pikamuodin edelläkävijä. Viime vuosina brändi on pyrkinyt parantamaan kestävän kehityksen imagoaan 'JOIN LIFE' -liikkeellä, jossa yritys sitoutuu kestävään tuotantoon ja eettisiin tavoitteisiin. Riippumattoman data kuitenkin osoittaa, että yhtiön todellinen panostus virheisiin valintoihin on vähäistä.",
         "natureTitle":"Ympäristö",
-        "natureText":"Zara tarjoaa mahdollisuuden kierrättää vanhoja vaatteita ja hyödyntää uusiutuvia pakkauksia. Ei ole kuitenkaan olemassa todisteita siitä, että kierrätys vähentäisi uusien vaatteiden tuotannon päästöjä. Brändin jatkuvasti uusiutuva vaatemallisto on jo luonnostaan haitallinen ympäristölle.",
+        "natureText":"Zara tarjoaa mahdollisuuden kierrättää vanhoja vaatteita ja hyödyntää uusiutuvia pakkauksia. Ei ole kuitenkaan olemassa todisteita siitä, että kierrätys vähentäisi uusien vaatteiden tuotannon päästöjä. Brändin jatkuvasti uusiutuva, pikamuotiin perustuva vaatemallisto on jo luonnostaan haitallinen ympäristölle.",
         "peopleTitle":"Ihmiset",
-        "peopleText":"Yhtiön toimitusketju on avoin. Työntekijöiden tasa-arvosta, olosuhteista ja palkkatasosta on löydettävissä dataa yhtiön omista selvityksistä. Ottaen huomioon Zaran korkeat voittomarginaalit, panostukset työntekijöiden palkkatason kohottamiseen ovat olleet pieniä.",
+        "peopleText":"Yhtiön toimitusketju on avoin. Työntekijöiden tasa-arvosta, olosuhteista ja palkkatasosta on löydettävissä dataa yhtiön omista selvityksistä. Ottaen huomioon Zaran korkeat voittomarginaalit, panostukset työntekijöiden palkkatason kohottamiseen ovat kuitenkin olleet pieniä.",
         "animalTitle":"Eläimet",
-        "animalText":"Zara on eläinten hyvinvoinnin säädöksissä kieltänyt turkisten käytön. Yhtiö kuitenkin hyödyntää tuotannossaan eläinperäistä nahkaa, villaa ja eksoottisten eläinten hiuksia.",
+        "animalText":"Zara on eläinten hyvinvoinnin säädöksissään kieltänyt turkisten käytön. Yhtiö kuitenkin hyödyntää tuotannossaan eläinperäistä nahkaa, villaa sekä eksoottisten eläinten karvaa.",
         "imagesrc":"/img/Zara-Logo-PNG5.png"
      },
      {
         "title":"Versace",
         "text":"Versace on italialainen luksusvaatteita valmistava muotitalo. Yhtiön tuotannon kestävyydestä on saatavilla niukasti tietoa",
         "natureTitle":"Ympäristö",
-        "natureText":"Ei ole todisteita siitä, että yhtiö pyrkisi vähentämään hiilidioksidipäästöjä tai käyttämään ympäristöystävällisiä materiaaleja. Yhtiön tavoitteena on lopettaa vaarallisten kemikaalien käyttö 2025 mennessä, mutta todisteita sen edistämisestä ei ole.",
+        "natureText":"Ei ole näyttöä siitä, että Versace pyrkisi vähentämään hiilidioksidipäästöjä tai käyttämään ympäristöystävällisiä materiaaleja. Yhtiön tavoitteena on lopettaa vaarallisten kemikaalien käyttö 2025 mennessä, mutta todisteita sen edistämisestä ei ole.",
         "peopleTitle":"Ihmiset",
-        "peopleText":"Versace julkaisee hyvin niukasti tietoa toimitusketjustaan. Yhtiö ei kerro työolosuhteista tai työntekijöidensä oikeuksista. Ei ole todisteita siitä, että koko toimitusketjussa olisi taattu työntekijöiden perustoimeentulo.",
+        "peopleText":"Versace julkaisee hyvin niukasti tietoa toimitusketjustaan. Yhtiö ei jaa tietoa toimittajiensa työolosuhteista eikä työntekijöiden oikeuksista ja tasa-arvosta. Ei ole todisteita siitä, että koko toimitusketjussa olisi taattu työntekijöiden perustoimeentulo.",
         "animalTitle":"Eläimet",
         "animalText":"Yhtiön ei ole läpinäkyvä tuotannonsa vaikutuksista eläinten hyvinvointiin. Tuotteissa käytetään nahkaa, villaa, sekä eksoottisten eläinten nahkaa. Versace käyttää myös turkista ja angoraa.",
         "imagesrc":"/img/Versace-Logo-PNG8.png"

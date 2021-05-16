@@ -68,7 +68,7 @@ function Overlay(props) {
         <div style={{position:"absolute", top:"0", right:"0", margin:"40px"}}>
         <img
             width="100"
-            height="100"
+            //height="100"
             src={imagesrc}
             alt="Generic placeholder"
         />
@@ -82,9 +82,6 @@ function Overlay(props) {
                 </Row>
                 </Container>
                 
-                    <p className="p-1 pb-3 overlayText">
-                        {text}
-                    </p>
                 <h5>{natureTitle}</h5>
                      <p className="p-1 pb-3 overlayText">
                         {natureText}
