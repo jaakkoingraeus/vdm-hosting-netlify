@@ -48,9 +48,11 @@ function Search(props) {
       <Container>
       <Row className="justify-content-center">
         <div className="SearchBarContainer">
-          <Form inline >
+          <Form inline className="justify-content-center">
+            <div className="d-flex">
               <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm searchBar" onChange={search}/>
-              <Button variant="outline-success shadow-sm" className="d-none d-sm-block"><FaSearch/></Button>
+              <Button variant="outline-success shadow-sm"><FaSearch/></Button>
+            </div>
           </Form>
         </div>
       </Row>
@@ -60,7 +62,7 @@ function Search(props) {
         <Col>
         <div className="CarouselContainer border rounded p-3 shadow-sm d-flex flex-column justify-content-center hideScroll">
         <CardDeck className="justify-content-center">
-          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} text={x.text} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Nothing found</h5>}
+          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Nothing found</h5>}
         </CardDeck>
         </div>
         </Col>
