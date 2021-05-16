@@ -14,7 +14,7 @@ function Header(props) {
         maxWidth: 'max-content',
         marginBottom: '3rem',
         fontSize: '3.5rem',
-        fontWeight: '600'
+        fontWeight: '650'
     }
 
     return(

@@ -9,23 +9,42 @@ function CampaignInfo(props) {
     <div className="page"> 
     <Container>
         <Row>
-        <Header text="Kampanja" borderColor="#0F0F0F"></Header>
+        <Header text="Varo viherpesua!" borderColor="#ffe749"></Header>
         </Row>
             <Row>
             <Col>       
                  <Card className="shadow">
                     <Card.Body>
-                        <Card.Title>What is Lorem Ipsum?</Card.Title>
-                        <Card.Text>
-                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                        <Card.Title c>Mitä on viherpesu?</Card.Title>
+                        <Card.Text className="campaignText">
+                    Vaateteollisuudessa koventuneet vaatimukset, kilpailu ja voiton tavoittelu ovat johtaneeet kuluttajia sokaisevaan viherpesuun. Kiillotetulla kuluttajaviestinnällä ja markkinoinnilla kätketään tuhoisat ympäristövaikutukset sekä ihmis- ja eläintenoikeusrikkomukset.
+                    </Card.Text>
+                    <Card.Title>Miksi viherpesua pitäisi varoa?</Card.Title>
+                        <Card.Text className="campaignText">
+                   Vaatealan viherpesu on laajamittaista ja salakavalaa. Sen tunnistaminen auttaa tekemään kestäviä valintoja, jotka estävät ilmastonmuutosta, vähentävät köyhyyttä ja pelastavat henkiä. 
+                    </Card.Text>
+                    <Card.Title>Me kerromme vaatteidesi todellisen vihreyden</Card.Title>
+                        <Card.Text className="campaignText">
+                   Autamme tekemään oikeita valintoja viherpesun keskellä. Uskomme, että voit näyttää hyvältä, säästää lompakkoa ja pelastaa maapalloa samaan aikaan!
                     </Card.Text>
                     </Card.Body>
             </Card>
             </Col>
             <Col className="d-none d-sm-none d-md-none d-lg-none d-xl-block">
-            <img src="/img/hmArticlePhoto.png"></img>
+            <div className="statBox">
+                <h1>10%</h1>
+                <p className="statDesc">Vuotuisista globaaleista hiilidioksidipäästöistä aiheutuu vaateteollisuuden tuotannosta*</p>
+            </div>
+            <div className="statBox">
+                <h1>98%</h1>
+                <p className="statDesc">Maailman vaatetuotannon työntekijöistä ansaitsee kuukaudessa vähemmän, mitä normaali elintaso vaatii.*</p>
+            </div>
+            <div className="statBox">
+                <h1>100 milj</h1>
+                <p className="statDesc">Eläintä tapetaan vuosittain vaateollisuutta varten turkistarhauksessa*</p>
+            </div>
             </Col>
+            
             </Row>
     </Container>
     </div>

@@ -49,7 +49,7 @@ function Search(props) {
       <Row className="justify-content-center">
         <div className="SearchBarContainer">
           <Form inline >
-              <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm searchBar" onChange={search}/>
+              <FormControl type="text" placeholder="Hae brändiä" className="mr-sm-2 shadow-sm searchBar" onChange={search}/>
               <Button variant="outline-success shadow-sm" className="d-none d-sm-block"><FaSearch/></Button>
           </Form>
         </div>

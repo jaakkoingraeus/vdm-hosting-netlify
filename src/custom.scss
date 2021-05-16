@@ -29,7 +29,7 @@ body {
   
   .page {
     position: relative;
-    height: 100vh;
+    //height: 100vh;
     padding: 15vh 5vw;
   }
 
@@ -68,6 +68,11 @@ body {
 }
 
 //FRONTPAGE
+
+.frontPage {
+  height: 100vh;
+}
+
 .callToActionText {
   margin: 2rem 0;
   display: block;
@@ -91,7 +96,7 @@ body {
 
 .SearchBarContainer {
   margin: 3rem 0 3rem 0;
-  width: 50%;
+  width: 55%;
 }
 
 .searchBar {
@@ -99,7 +104,7 @@ body {
 }
 
 .CarouselContainer {
-  min-height: 37vh;
+  min-height: 40vh;
   max-height: 35vh;
   overflow-x: scroll;
   margin-bottom: 2.5rem;
@@ -152,6 +157,34 @@ body {
   overflow-y: scroll;
 }
 
+}
+
+//CAMPAIGN
+
+
+.campaignText {
+  margin-bottom: 3rem;
+}
+
+.statBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.7rem;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffe749;
+  }
+
+  .statDesc {
+    width: 65%;
+    color: gray;
+  }
 }
 
 //BLOGS
