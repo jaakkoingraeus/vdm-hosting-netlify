@@ -36,20 +36,20 @@ function Search(props) {
     <div className="page d-flex flex-column justify-content-around">
     <Container className="d-flex flex-column justify-content-between">
       <Row className="justify-content-center">
-        <Header text="Vihertutka"></Header>
+        <Header text="Vihertutka" borderColor="#74c82e"></Header>
       </Row>
     </Container>
     <Container>
       <Row className="justify-content-center">
-        <div><p>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta.</p>
+        <div className="searchDescription"><h5>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta.</h5>
         </div>
       </Row>
       </Container>
       <Container>
       <Row className="justify-content-center">
         <div className="SearchBarContainer">
-          <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm" onChange={search}/>
+          <Form inline >
+              <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm searchBar" onChange={search}/>
               <Button variant="outline-success shadow-sm" className="d-none d-sm-block"><FaSearch/></Button>
           </Form>
         </div>

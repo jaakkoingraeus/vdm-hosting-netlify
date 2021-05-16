@@ -84,10 +84,25 @@ body {
 
 //SEARCH PAGE
 
+.searchDescription {
+  text-align: center;
+  width: 60%;
+}
+
+.SearchBarContainer {
+  margin: 3rem 0 3rem 0;
+  width: 50%;
+}
+
+.searchBar {
+  min-width: 90%;
+}
+
 .CarouselContainer {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 37vh;
+  max-height: 35vh;
   overflow-x: scroll;
+  margin-bottom: 2.5rem;
 }
 
 .overlay{
