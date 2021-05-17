@@ -15,11 +15,29 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+   /* Hide scrollbar for Chrome, Safari and Opera */
+.hideScroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
   
   .page {
     position: relative;
-    height: 100vh;
-    padding: 10vh 5vw;
+    //height: 100vh;
+    padding: 15vh 5vw;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .page{
+      min-height: 100vh;
+      height: auto;
+    }
   }
 
   #frontpageVideo {
@@ -31,15 +49,6 @@ body {
     z-index: -1;
   }
 
-  .overlay{
-    position: absolute;
-    margin-right: auto;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    width: 80%;
-    max-width: 100ch;
-  }
   
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -59,6 +68,11 @@ body {
 }
 
 //FRONTPAGE
+
+.frontPage {
+  height: 100vh;
+}
+
 .callToActionText {
   margin: 2rem 0;
   display: block;
@@ -75,8 +89,45 @@ body {
 
 //SEARCH PAGE
 
+.searchDescription {
+  text-align: center;
+  width: 60%;
+}
+
+.SearchBarContainer {
+  margin: 3rem 0 3rem 0;
+  width: 55%;
+}
+
+.searchBar {
+  min-width: 90%;
+}
+
+.CarouselContainer {
+  min-height: 40vh;
+  max-height: 35vh;
+  padding: 30px;
+  overflow-x: scroll;
+  margin-bottom: 2.5rem;
+}
+
+.overlay{
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+  top: 15vh;
+  width: 80vw;
+  max-height: 80vh;
+  max-width: 150ch;
+  overflow-y: scroll;
+  background-color: $secondary;
+  border-radius: 15px;
+}
+
 .overlayTitle {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .overlayText {
@@ -91,6 +142,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: 2000;
+    max-height: 100vh;
   }
 
   .overlayTitle {
@@ -100,10 +152,65 @@ body {
   .overlayText {
     font-size: 1rem;
   }
+
+  
+.CarouselContainer {
+  overflow-y: scroll;
+}
+
+}
+
+//CAMPAIGN
+
+
+.campaignText {
+  margin-bottom: 3rem;
+}
+
+.statBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.7rem;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #ffe749;
+  }
+
+  .statDesc {
+    width: 65%;
+    color: gray;
+  }
 }
 
 //BLOGS
 
+.blogContainer {
+  display: flex;
+  padding: 5% 10% 10% 10%;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .blogContainer {
+    padding: 1%;
+    flex-direction: column;
+    align-items: center;
+  }
   
+}
+
+//Divider
+@media only screen and (max-width: 768px) {
+.dividerText {
+font-size: large;
+}
+}
+
 //Importataan alkuperäinen bootstrap styling
 @import '~bootstrap/scss/bootstrap.scss';

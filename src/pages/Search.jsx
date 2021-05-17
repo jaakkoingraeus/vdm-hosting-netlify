@@ -4,8 +4,12 @@ import Overlay from '../components/Overlay';
 import {Form, FormControl, Button, CardDeck, Container, Row, Col } from 'react-bootstrap'
 import { useState } from "react";
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
+import Header from '../components/Header.jsx'
+import {FaSearch} from 'react-icons/fa'
 
 function Search(props) {
+  //searchable database
+  const companyData = require('../companyDatabase.json').Data;
   //status of overlay
   const [openOverlay, setOpenOverlay] = useState(false);
   const [overlayData, setOverlayData] = useState({title:"hhmm", text:"aaaaaaaaaaaaaaadf dsaf das dsa f", imagesrc:"a"});
@@ -25,46 +29,40 @@ function Search(props) {
     setSearchText(input.target.value)
   }
 
-    return(
+
+  const dataToRender = companyData.filter( (x)=> x.title.toLowerCase().includes(searchText.toLowerCase()))
+  return(
   <ScrollableAnchor id={'search'}>
-    <div className="page d-flex flex-column justify-content-center">
+    <div className="page d-flex flex-column justify-content-around">
+    <Container className="d-flex flex-column justify-content-between">
+      <Row className="justify-content-center">
+        <Header text="Vihertutka" borderColor="#74c82e"></Header>
+      </Row>
+    </Container>
     <Container>
       <Row className="justify-content-center">
-        <Col>
+        <div className="searchDescription"><h5>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta.</h5>
+        </div>
+      </Row>
+      </Container>
+      <Container>
+      <Row className="justify-content-center">
         <div className="SearchBarContainer">
-          <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={search}/>
-              <Button variant="outline-success">Search</Button>
-              <div>{searchText}</div>
+          <Form inline className="justify-content-center">
+            <div className="d-flex">
+              <FormControl type="text" placeholder="Search" className="mr-sm-2 shadow-sm searchBar" onChange={search}/>
+              <Button variant="outline-success shadow-sm"><FaSearch/></Button>
+            </div>
           </Form>
         </div>
-        </Col>
       </Row>
+      </Container>
+      <Container>
       <Row className="mt-2">
         <Col>
-        <div className="CarouselContainer">
-        <CardDeck>
-          <Tile imagesrc="/img/hmLogo.png" text="" clickFunction={ () => changeOverlayData({
-            title:"The Tragedy of Darth Plagueis the Wise",
-            text:
-            "A story that the Jedi would not tell you.'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic he could save others from death, but not himself.' - Sheev Palpatine",
-            imagesrc:"/img/hmArticlePhoto.png"
-            })}></Tile>
-
-          <Tile imagesrc="a" text="a" clickFunction={ () => changeOverlayData({
-            title:"This is our planet, wake boi", 
-            text:
-            "A story that the Jedi would not tell you.'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic he could save others from death, but not himself.' - Sheev Palpatine", 
-            imagesrc:"eeeee"
-            })}></Tile>
-
-          <Tile imagesrc="a" text="a" clickFunction={ () => changeOverlayData({
-            title:"Shiish something's off babe", 
-            text:
-            "A story that the Jedi would not tell you.'Did you ever hear the Tragedy of Darth Plagueis the wise? I thought not. It's not a story the Jedi would tell you. It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life... He had such a knowledge of the dark side that he could even keep the ones he cared about from dying. The dark side of the Force is a pathway to many abilities some consider to be unnatural. He became so powerful... the only thing he was afraid of was losing his power, which eventually, of course, he did. Unfortunately, he taught his apprentice everything he knew, then his apprentice killed him in his sleep. It's ironic he could save others from death, but not himself.' - Sheev Palpatine", 
-            imagesrc:"iuuiiiiiii"
-            })}></Tile>
-
+        <div className="CarouselContainer border rounded p-3 shadow-sm d-flex flex-column justify-content-center hideScroll">
+        <CardDeck className="justify-content-center">
+          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Nothing found</h5>}
         </CardDeck>
         </div>
         </Col>

@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image'
 function Frontpage(props) {
     return(
         <ScrollableAnchor id={'frontpage'}>
-    <div className="page d-flex flex-column justify-content-center">
+    <div className="page frontPage d-flex flex-column justify-content-center">
         <div className="FrontpageTextContainer d-flex justify-content-center flex-column">
             <Image src={VaroViherpesuainetta} fluid/>
             <h1 className="callToActionText">Testaa vaatteittesi todellinen vihreys <a href="#search" className="sloganLink">Vihertutkalla</a></h1>

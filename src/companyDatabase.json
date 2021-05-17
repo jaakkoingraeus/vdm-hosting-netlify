@@ -1,0 +1,64 @@
+{
+    "Data": [
+    {
+        "title":"Zara",
+        "text":"Zara on maailmanlaajuisesti tunnettu pikamuodin edelläkävijä. Viime vuosina brändi on pyrkinyt parantamaan kestävän kehityksen imagoaan 'JOIN LIFE' -liikkeellä, jossa yritys sitoutuu kestävään tuotantoon ja eettisiin tavoitteisiin. Riippumattoman data kuitenkin osoittaa, että yhtiön todellinen panostus virheisiin valintoihin on vähäistä.",
+        "natureTitle":"Ympäristö",
+        "natureText":"Zara tarjoaa mahdollisuuden kierrättää vanhoja vaatteita ja hyödyntää uusiutuvia pakkauksia. Ei ole kuitenkaan olemassa todisteita siitä, että kierrätys vähentäisi uusien vaatteiden tuotannon päästöjä. Brändin jatkuvasti uusiutuva, pikamuotiin perustuva vaatemallisto on jo luonnostaan haitallinen ympäristölle.",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"Yhtiön toimitusketju on avoin. Työntekijöiden tasa-arvosta, olosuhteista ja palkkatasosta on löydettävissä dataa yhtiön omista selvityksistä. Ottaen huomioon Zaran korkeat voittomarginaalit, panostukset työntekijöiden palkkatason kohottamiseen ovat kuitenkin olleet pieniä.",
+        "animalTitle":"Eläimet",
+        "animalText":"Zara on eläinten hyvinvoinnin säädöksissään kieltänyt turkisten käytön. Yhtiö kuitenkin hyödyntää tuotannossaan eläinperäistä nahkaa, villaa sekä eksoottisten eläinten karvaa.",
+        "imagesrc":"/img/Zara-Logo-PNG5.png"
+     },
+     {
+        "title":"Versace",
+        "text":"Versace on italialainen luksusvaatteita valmistava muotitalo. Yhtiön tuotannon kestävyydestä on saatavilla niukasti tietoa",
+        "natureTitle":"Ympäristö",
+        "natureText":"Ei ole näyttöä siitä, että Versace pyrkisi vähentämään hiilidioksidipäästöjä tai käyttämään ympäristöystävällisiä materiaaleja. Yhtiön tavoitteena on lopettaa vaarallisten kemikaalien käyttö 2025 mennessä, mutta todisteita sen edistämisestä ei ole.",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"Versace julkaisee hyvin niukasti tietoa toimitusketjustaan. Yhtiö ei jaa tietoa toimittajiensa työolosuhteista eikä työntekijöiden oikeuksista ja tasa-arvosta. Ei ole todisteita siitä, että koko toimitusketjussa olisi taattu työntekijöiden perustoimeentulo.",
+        "animalTitle":"Eläimet",
+        "animalText":"Yhtiön ei ole läpinäkyvä tuotannonsa vaikutuksista eläinten hyvinvointiin. Tuotteissa käytetään nahkaa, villaa, sekä eksoottisten eläinten nahkaa. Versace käyttää myös turkista ja angoraa.",
+        "imagesrc":"/img/Versace-Logo-PNG8.png"
+     },{
+         "title":"H&M",
+         "header":"Vihreys",
+         "text":
+          "H&M on yksi maailman tunnetuimmista pikamuotia valmistavista yrityksistä. Yhtiö on asettanut tavoitteeksi vähentää kasvihuonepäästöjä sekä luvannut käyttää 100% uusiutuvia materiaaleja vuoteen 2030 mennessä.",
+          "natureTitle":"Ympäristö",
+          "natureText":"Yhtiö tarjoaa asiakkaille mahdollisuuden kierrättää vanhoja vaatteita. H&M hyödyntää uusiutuvaa energiaa osassa tuotantoaan sekä on sitoutunut estämään uhanalaisten metsien hävittämistä. Brändi hyödyntää tuotannossa ympäristöystävällisiä materiaaleja, mutta vain hyvin pienessä osassa. Liiketoimintamalli perustuu jo itsessään epäekologiseen pikamuotiin. Ei ole myöskään todisteita siitä, että H&M olisi saavuttamassa asettamiaan ympäristötavoitteita.",
+          "peopleTitle":"Ihmiset",
+          "peopleText":"H&M:n toimitusketju on avoin, sekä yhtiö julkaisee yksityiskohtaista tietoa toimittajien työolosuhteista sekä työntekijöiden oikeuksista ja tasa-arvosta. Yhtiöllä on käynnissä projekti palkkatason parantamiseksi, mutta ei ole olemassa todisteita siitä, että työntekijöiden toimeentulon turvaava palkkataso olisi taattua koko toimitusketjussa.",
+          "animalTitle":"Eläimet",
+          "animalText":"Brändi on laatinut viralliset käytänteet eläinten hyvinvoinnin tukemiseksi. Yhtiön käyttää vastuullisesti tuotettua villaa ja on kieltänyt sekä turkisten että angoran käytön. Brändin tavoitteena on, että vuoteen 2025 mennessä kaikki tuotannossa käytetty nahka on vastuullisesti tuotettua.",
+          "imagesrc":"/img/H_M-Logo-PNG1-2.png"
+     },
+     {
+        "title":"Nike", 
+        "header":"Vihreys",
+        "text":
+        "Nike on yksi maailman tunnetuimmista ja tuottavimmista urheilubrändeistä.",
+        "natureTitle":"Ympäristö",
+        "natureText":"Yhtiö hyödyntää osassa tuotantoa orgaanista ja kierrätettyä villaa sekä polyesteriä. Nike on asettanut tuotantoketjulleen tieteelliset tavoitteet kasvihuonekaasujen vähentämiseksi, mutta ei ole julkaissut tietoa tavoitteiden edistymisestä. Brändillä ei ole käytänteitä metsien hävittämisen estämiseksi.",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"Nike julkaisee avoimesti tietoa toimitusketjustaan. Toimittajien työolosuhteista ja työntekijöiden tasa-arvosta, oikeuksista sekä pakkotyövoiman käytöstä on saatavilla niukasti tietoa. Nike ei ole osoittanut, että työntekijöiden toimeentulon turvaava palkkataso olisi taattu koko toimitusketjussa.",
+        "animalTitle":"Eläimet",
+        "animalText":"Nike ei käytä tuotannossa turkiksia tai angoraa. Villaa, nahkaa ja untuvaa kuitenkin hyödynnetää, julkaisematta tietoa materiaalien alkuperästä.", 
+        "imagesrc":"/img/Nike-Logo-PNG8.png"
+    },
+    {
+        "title":"Marimekko",
+        "header":"Vihreys", 
+        "text":
+        "",
+        "natureTitle":"Ympäristö",
+        "natureText":"",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"",
+        "animalTitle":"Eläimet",
+        "animalText":"", 
+        "imagesrc":"/img/marimekko-logo.png"
+    }        
+    ]
+}

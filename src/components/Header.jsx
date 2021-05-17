@@ -8,9 +8,13 @@ function Header(props) {
 
     const borderBottom = {
         borderStyle:'solid',
-        borderWidth: '0px 0px 4px 0px',
+        borderWidth: '0px 0px 10px 0px',
         borderColor: props.borderColor,
-        width: 'min-content'
+        width: 'auto',
+        maxWidth: 'max-content',
+        marginBottom: '3rem',
+        fontSize: '3.5rem',
+        fontWeight: '650'
     }
 
     return(
