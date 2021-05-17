@@ -15,7 +15,7 @@ function CampaignInfo(props) {
             <Col>       
                  <Card className="shadow">
                     <Card.Body>
-                        <Card.Title c>Mitä on viherpesu?</Card.Title>
+                        <Card.Title>Mitä on viherpesu?</Card.Title>
                         <Card.Text className="campaignText">
                     Vaateteollisuudessa koventuneet vaatimukset, kilpailu ja voiton tavoittelu ovat johtaneeet kuluttajia sokaisevaan viherpesuun. Kiillotetulla kuluttajaviestinnällä ja markkinoinnilla kätketään tuhoisat ympäristövaikutukset sekä ihmis- ja eläintenoikeusrikkomukset.
                     </Card.Text>

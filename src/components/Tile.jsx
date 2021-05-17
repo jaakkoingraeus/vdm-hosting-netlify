@@ -18,7 +18,7 @@ function Tile(props){
     <Card.Img variant="top" src={props.imagesrc} />
     </div>
     } else {
-    content = <div >
+    content = <div>
     <Card.Img variant="top" src={props.imagesrc}/>
     <Card.Body >
         <Card.Subtitle className="mb-2 text-success">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Media, Card, CardColumns, Form, Button, Container, Row, Col } from 'react-bootstrap'
+import { Media, Card, Form, Button, Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
 import {FaComment} from 'react-icons/fa'
