@@ -75,4 +75,5 @@ function Search(props) {
   </ScrollableAnchor>
   )
 }
+
 export default Search
