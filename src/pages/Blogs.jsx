@@ -18,7 +18,7 @@ function Blogs(props) {
         <Row>
         <div className="blogContainer" style={{ maxWidth: '100%'}}>
          <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => window.open("5pointtia.html", "_blank")}></Tile>
-         <Tile title="React and chill?" author="Juho Alin" subject="Verkkojulkaisemisen perusteet" imagesrc="/img/blog2.png" clickFunction={ () =>  window.open("kampanjaInfo.html", "_blank") }></Tile>
+         <Tile title="Mikä Viherpesuaine?" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () =>  window.open("kampanjaInfo.html", "_blank") }></Tile>
          <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () =>  window.open("eettisyys.html", "_blank")}></Tile>
 
         </div>
