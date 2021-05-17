@@ -12,7 +12,7 @@ function App() {
       <NavbarContainer></NavbarContainer>
         <Frontpage/>
          <Search/>
-         <Divider text='”Disinformation - Information that is false and deliberately created to harm a person, social group, organisation or country” - Unesco"' imgsrc="/img/blog1.png"/>
+         <Divider text=' ”Disinformation - Information that is false and deliberately created to harm a person, social group, organisation or country” - Unesco' imgsrc="/img/blog1.png"/>
          <CampaignInfo/>
          <Divider text="Your inspirational quote here" imgsrc="/img/blog1.png"/>
         <Blogs/>
