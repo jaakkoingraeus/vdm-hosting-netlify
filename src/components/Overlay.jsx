@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import { useEffect, useState } from 'react'
 import {Media,  Button, Fade, Container, Row } from 'react-bootstrap'
