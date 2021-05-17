@@ -14,7 +14,8 @@ function App() {
          <Search/>
          <Divider text=' ”Disinformation - Information that is false and deliberately created to harm a person, social group, organisation or country” - Unesco' imgsrc="/img/blog1.png"/>
          <CampaignInfo/>
-         <Divider text="Your inspirational quote here" imgsrc="/img/blog1.png"/>
+         <Divider text='“Sustainability is now a big baggy sack in which people throw all kinds of old ideas, hot air and dodgy activities in order to be able to greenwash their products and feel good.”
+― Kevin McCloud' imgsrc="/img/blog1.png"/>
         <Blogs/>
         <Divider text="Your inspirational quote here" imgsrc="/img/blog1.png"/>
         <Comments/>
