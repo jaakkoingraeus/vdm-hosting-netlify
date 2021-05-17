@@ -41,7 +41,7 @@ function Search(props) {
     </Container>
     <Container>
       <Row className="justify-content-center">
-        <div className="searchDescription"><h5>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta.</h5>
+        <div className="searchDescription"><h5>Tiedätkö, miten päivän asusi vaikuttaa ympäristön, ihmisten tai eläinten hyvinvointiin? Vihertutka paljastaa suosikkibrändiesi todellisen vastuullisuuden markkinoinnin luomien mielikuvien alta. Hae vaatemerkkiä nimellä ja klikkaa logoa nähdäksesi asiantuntijoiden koostaman tietopaketin vaatemerkin vihreydestä.</h5>
         </div>
       </Row>
       </Container>
