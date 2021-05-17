@@ -11,8 +11,8 @@ function Divider(props) {
         color: '#FFFFFF'
     }
     return(
-        <div style={bgImage} className="d-flex justify-content-center align-items-center">
-            <h1 className="dividerText">{props.text}</h1>
+        <div style={bgImage} className="d-flex justify-content-center align-items-center p-5">
+            <h3 className="dividerText d-none d-md-block">{props.text}</h3>
         </div>
     )
     
