@@ -12,6 +12,9 @@ function Blogs(props) {
             <Row>
                 <Header text="Blogit" borderColor="#74c82e"></Header>
             </Row>
+            <Row className="justify-content-center">
+                <h4 className="searchDescription">Viherpesua on monenlaista ja aihe on monimutkainen. Blogissamme asiantuntijat kertovat viherpesun vaikutuksista ja vinkkaavat kuinka tunnistat viherpesun.</h4>
+            </Row>
         <Row>
         <div className="blogContainer" style={{ maxWidth: '100%'}}>
          <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => null}></Tile>
