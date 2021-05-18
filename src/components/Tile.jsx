@@ -18,8 +18,8 @@ function Tile(props){
     <Card.Img variant="top" src={props.imagesrc} />
     </div>
     } else {
-    content = <div>
-    <Card.Img variant="top" src={props.imagesrc}/>
+    content = <div style={{ minWidth: '30%', cursor:'pointer'}}>
+    <Card.Img variant="top" src={props.imagesrc} style={{ minWidth: '30%', cursor:'pointer'}}/>
     <Card.Body >
         <Card.Subtitle className="mb-2 text-success">
           {props.subject}

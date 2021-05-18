@@ -103,6 +103,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 55%;
+    margin-bottom: 10rem;
 }
 
 .number {

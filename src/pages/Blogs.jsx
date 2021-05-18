@@ -16,9 +16,9 @@ function Blogs(props) {
                 <h5 className="searchDescription">Viherpesua on monenlaista ja aihe on monimutkainen. Blogissamme asiantuntijat kertovat viherpesun vaikutuksista ja vinkkaavat kuinka tunnistat viherpesun.</h5>
             </Row>
         <Row>
-        <div className="blogContainer" style={{ maxWidth: '100%'}}>
+        <div className="blogContainer" style={{ minWidth: '100%'}}>
          <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => window.open("5pointtia.html", "_blank")}></Tile>
-         <Tile title="Mikä Viherpesuaine?" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () =>  window.open("kampanjaInfo.html", "_blank") }></Tile>
+         <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () =>  window.open("blogi2.html", "_blank") }></Tile>
          <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () =>  window.open("eettisyys.html", "_blank")}></Tile>
 
         </div>

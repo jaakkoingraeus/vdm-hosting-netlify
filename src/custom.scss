@@ -31,7 +31,7 @@ body {
   .page {
     position: relative;
     //height: 100vh;
-    padding: 15vh 5vw;
+    padding: 15vh 5vw 15vh 5vw;
   }
 
   @media only screen and (max-width: 768px) {
@@ -198,7 +198,8 @@ body {
 
 .blogContainer {
   display: flex;
-  padding: 1% 10% 10% 10%;
+  margin-top: 5rem;
+  //padding: 1% 10% 10% 10%;
   justify-content: space-around;
 }
 
