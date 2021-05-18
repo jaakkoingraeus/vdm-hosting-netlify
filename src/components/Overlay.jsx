@@ -1,6 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React from 'react'
 import { useEffect, useState } from 'react'
-import {Media,  Button, Fade, Image, Container, Row } from 'react-bootstrap'
+import {Media,  Button, Fade, Container, Row } from 'react-bootstrap'
 import {GrClose} from 'react-icons/gr'
 /*
 * props is given a JSON of {title:"", text:"", imagesrc:""} as data
@@ -9,7 +10,6 @@ import {GrClose} from 'react-icons/gr'
 */
 function Overlay(props) {
   const title = props.data.title
-  const text = props.data.text
   const natureTitle = props.data.natureTitle
   const natureText = props.data.natureText
   const peopleTile = props.data.peopleTitle
@@ -27,7 +27,7 @@ function Overlay(props) {
         enableScroll()
     }
     setMobile(mobileOr)
-    console.log('Open: ', props.open)
+    //console.log('Open: ', props.open)
   }, [])
   
   window.addEventListener('resize', () => {

@@ -15,7 +15,7 @@ function CampaignInfo(props) {
             <Col>       
                  <Card className="shadow">
                     <Card.Body>
-                        <Card.Title c>Mitä on viherpesu?</Card.Title>
+                        <Card.Title>Mitä on viherpesu?</Card.Title>
                         <Card.Text className="campaignText">
                     Vaateteollisuudessa koventuneet vaatimukset, kilpailu ja voiton tavoittelu ovat johtaneeet kuluttajia sokaisevaan viherpesuun. Kiillotetulla kuluttajaviestinnällä ja markkinoinnilla kätketään tuhoisat ympäristövaikutukset sekä ihmis- ja eläintenoikeusrikkomukset.
                     </Card.Text>
@@ -25,7 +25,7 @@ function CampaignInfo(props) {
                     </Card.Text>
                     <Card.Title>Me kerromme vaatteidesi todellisen vihreyden</Card.Title>
                         <Card.Text className="campaignText">
-                   Autamme tekemään oikeita valintoja viherpesun keskellä. Uskomme, että voit näyttää hyvältä, säästää lompakkoa ja pelastaa maapalloa samaan aikaan!
+                   Autamme tekemään oikeita valintoja viherpesun keskellä. Uskomme, että voit näyttää hyvältä, säästää lompakkoa ja pelastaa maapalloa samaan aikaan! Lue lisää <a href="#blogs">blogista</a>.
                     </Card.Text>
                     </Card.Body>
             </Card>

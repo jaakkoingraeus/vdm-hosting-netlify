@@ -14,6 +14,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
    /* Hide scrollbar for Chrome, Safari and Opera */
@@ -30,13 +31,14 @@ body {
   .page {
     position: relative;
     //height: 100vh;
-    padding: 15vh 5vw;
+    padding: 15vh 5vw 15vh 5vw;
   }
 
   @media only screen and (max-width: 768px) {
     .page{
       min-height: 100vh;
       height: auto;
+      padding: 10vh 3vw 0vh 3vw;
     }
   }
 
@@ -104,8 +106,8 @@ body {
 }
 
 .CarouselContainer {
-  min-height: 40vh;
-  max-height: 35vh;
+  min-height: 35vh;
+  max-height: 30vh;
   padding: 30px;
   overflow-x: scroll;
   margin-bottom: 2.5rem;
@@ -158,6 +160,10 @@ body {
   overflow-y: scroll;
 }
 
+.searchDescription{
+  width:95%;
+  overflow-wrap: break-word;
+  }
 }
 
 //CAMPAIGN
@@ -192,7 +198,8 @@ body {
 
 .blogContainer {
   display: flex;
-  padding: 5% 10% 10% 10%;
+  margin-top: 5rem;
+  //padding: 1% 10% 10% 10%;
   justify-content: space-around;
 }
 
@@ -206,10 +213,15 @@ body {
 }
 
 //Divider
-@media only screen and (max-width: 768px) {
+
 .dividerText {
-font-size: large;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+@media only screen and (max-width: 1200px) {
+  .dividerText {
+    font-size: xx-large;
+    }
 }
 
 //Importataan alkuperäinen bootstrap styling

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Media, Card, CardColumns, Form, Button, Container, Row, Col } from 'react-bootstrap'
+import { Media, Card, Form, Button, Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
 import {FaComment} from 'react-icons/fa'
 
 function Comments(props) {
-    const [comments, setComments] = useState([{nickname: 'user1', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:1},{nickname: 'username', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:2},{nickname: 'user3', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:3},{nickname: 'user4', text:'Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputatz', timestamp:4}])
+    const [comments, setComments] = useState([{nickname: 'Jaahas', text:'No jo on. Törkeää tällainen kuluttajan silmään sahaaminen. Pitänee olla varovaisempi.', timestamp:1},{nickname: 'conscious keijo', text:'Kannatan kyllä kirpputorien käyttöä ja kierrätystä. Uusia vaatteita on ihan turha ostaa.', timestamp:2},{nickname: 'Aapelinen', text:'Omat vaatteet on henkkamaukasta ja tulee varmaan tulevaisuudessakin olemaan. Vaatteet saa sieltä niin kovin helposti.', timestamp:3},{nickname: 'Haapsburgeri', text:'Pistää vihaksi tällainen kuluttajan kiusaaminen. Vastuullinen eläminen on jo muutenkin aivan liian hankalaa ja sitten vielä tällaista.', timestamp:4}])
     const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:''});
   
     const addComment = () => {

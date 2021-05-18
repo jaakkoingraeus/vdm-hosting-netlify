@@ -3,15 +3,17 @@ import React from 'react'
 function Divider(props) {
 
     const bgImage = {
-        backgroundImage: 'url('+props.imgsrc+')',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
+        //backgroundImage: 'url('+props.imgsrc+')',
+      //  backgroundRepeat: 'no-repeat',
+       // backgroundSize: 'cover',
         width: '100vw',
         height: '20vw',
-        color: '#FFFFFF'
+        color: props.textColor,
+        backgroundColor: props.color,
+        padding: '0vw 10vw'
     }
     return(
-        <div style={bgImage} className="d-flex justify-content-center align-items-center">
+        <div style={bgImage} className=" d-none d-md-flex flex-column justify-content-center align-items-center">
             <h1 className="dividerText">{props.text}</h1>
         </div>
     )
