@@ -128,9 +128,9 @@ body {
 }
 
 .smalltitle h1 {
-    font-weight: bold;
+    font-style: italic;
     list-style: square;
-    font-size: 1.3rem;
+    
 }
 
 
