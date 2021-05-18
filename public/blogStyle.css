@@ -78,6 +78,8 @@ body {
 
 .author h2 {
     margin-bottom: 0;
+    font-size: 1.5rem;
+    margin: 1rem 0 1rem 0;
 }
 
 .author p {
@@ -89,12 +91,14 @@ body {
 .author h3 {
     color: gray;
     width: 80%;
+    font-size: 1rem;
     margin: 1rem 0 1rem 0;
 }
 
 .header h1 {
     font-size: 4rem;
     font-weight: 700;
+    margin: 1rem 0 3rem 0;
 
 }
 
@@ -113,24 +117,35 @@ body {
     margin-top: 3rem;
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 50px;
     background-color: #ffe749;
-    max-width: 5rem;
-    max-height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .number h1 {
+    margin-top: 5px;
+    font-size: 30px;
     font-weight: 900;
 }
 
 .textContent p {
+    margin: 1rem 0 1rem 0;
     font-size: 1.2rem;
 }
 
 .textContent h3 {
+    margin: 1rem 0 1rem 0;
     font-size: 2rem;
 }
+
+.list {
+    margin: 2rem 0 0rem 0;
+}
+
 .list h2 {
+    margin-top: 2rem;
     font-style: italic;
     font-size: 1.3rem;
     color: #74c82e;
@@ -146,10 +161,14 @@ body {
 
 .topic {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: center;
+    text-align: center;
+    vertical-align: center;
     background-color: #74c82e;
-    margin: 5rem 0 0rem 0;
-    padding: 0 1rem 0 1rem;
+    margin: 5rem 0 1rem 0;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .topic p {
