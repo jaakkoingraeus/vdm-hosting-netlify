@@ -3,6 +3,9 @@ import Header from '../components/Header.jsx'
 import Tile from '../components/Tile.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
 import { Container, Row } from 'react-bootstrap'
+import {
+    Link
+} from 'react-router-dom'
 
 function Blogs(props) {
     return(
@@ -17,10 +20,15 @@ function Blogs(props) {
             </Row>
         <Row>
         <div className="blogContainer" style={{ minWidth: '100%'}}>
-         <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => window.open("5pointtia.html", "_blank")}></Tile>
-         <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () =>  window.open("blogi2.html", "_blank") }></Tile>
-         <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () =>  window.open("eettisyys.html", "_blank")}></Tile>
-
+            <Link to="/5pointtia">
+                <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+            </Link>
+            <Link to="/tiedosta">
+                <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+            </Link>
+            <Link>
+                <Tile title="Miksi ei kannata virherpestä?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+            </Link>
         </div>
         </Row>
         </Container>

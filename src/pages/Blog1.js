@@ -1,6 +1,31 @@
-<!DOCTYPE html>
-<html lang="fi">
-  <head>
+import React from 'react'
+import {
+    Link,
+} from 'react-router-dom'
+
+
+//Nav scroll
+let scrollOld = window.scrollY
+window.addEventListener('scroll', () => {
+    const navBarJS = document.getElementById('navBar')
+    if (navBarJS) {
+    let newScroll = window.scrollY
+    if (newScroll > scrollOld) {
+        navBarJS.style.transform = "translateY(-100%)"
+    } else {
+        navBarJS.style.transform = "translateY(0%)"
+    }
+    scrollOld = newScroll
+}})
+
+const scrollTop = () => {
+    window.scrollTo(0, 0)
+}
+
+const Blog1 = () => {
+    return (
+        <>
+        <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -11,10 +36,14 @@
     <link rel="stylesheet" type="text/css" href="blogStyle.css" media="screen"/>
   <title>Sitra Blogi</title>
   </head>
-  <body>
-    <nav class="backNavBar">
-      <img class="logo" src="/img/sitraLogo.svg" alt="">
-      <!--a href="#"><img class="cross" src="/img/cross-sign.svg" alt=""></a-->
+  <body onLoad={scrollTop}>
+    <nav class="backNavBar" id="navBar">
+        <Link to="/#blogs">
+          <img class="logo" src="/img/sitraLogo.svg" alt="Logo"/>
+        </Link>
+        <Link to="/#blogs">
+          <img class="cross" src="/img/cross-sign.svg" alt=""/>
+        </Link>
    </nav>
 
     <div class="page">
@@ -26,7 +55,7 @@
     </div>
 
     <div class="header">
-      <h1>Viisi pointtia <br> - mistä tunnistat viherpesun?</h1>
+      <h1>Viisi pointtia <br/> - mistä tunnistat viherpesun?</h1>
       <p>
         Nykypäivän kuluttajat vaativat yrityksiltä enemmän tekoja ja vastuullisia sellaisia. Vastuullisuus onkin noussut viime vuosina trendiksi, jonka myös kaupalliset toimijat ovat noteeranneet. Osa yrityksistä on havainnut puutteet ja on tehnyt muutoksia muunmuassa materiaali- ja toimitusketjuvalinnoissa, mutta moni ratsastaa vastuullisuustrendillä ja saalistaa kaupallista voittoa ilman konkreettisia tekoja. Miten kuluttaja osaa sitten bongata oikeat ja merkitykselliset toimijat viherpesijöiden seasta?
       </p>
@@ -35,11 +64,11 @@
     <div class="wrapper">
       <div class="author">
         <h3>Kirjoittaja</h3>
-        <img src="/img/becc Edited.jpeg" alt="">
+        <img src="/img/becc Edited.jpeg" alt=""/>
         <h2>Rebekka Sihvola</h2>
-        <p>Asiantuntija<br> Sitra</p>
+        <p>Asiantuntija<br/> Sitra</p>
       </div>
-      <img src="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" alt="">
+      <img src="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" alt=""/>
     </div>
 
     <div class="textContent">
@@ -58,7 +87,7 @@
     <h2>	Bluesign</h2> – Tuotantoprosessit, sellaisia että resursseja olisi käytetty ympäristön suojelun kannalta mahdollisimman tehokkaasti. 
     <h2>	GOTS eli Global Organic Textile Standard </h2>– Tekstiili on ekologinen ja eettinen. Huomioidaan vaatteen koko elinkaari ja myönnetään vain luomukuiduille.
     <h2>	Ökö-Tex 100</h2> – Ympäristö- ja tuoteturvallisuusmerkki, joka rajoittaa tiettyjen haittakemikaalien käyttöä. Ei takaa luomukankaiden käyttöä.</div>
-   <br> <br> Yrityksillä, kuten H&M ja Lindex voi olla omia vastuullisilta kuulostavia “sertifikaatteja”, jotka eivät kuitenkaan takaa minkäänlaisia oikeita tekoja, niin kuin riippumattomien yhdistysten sertifikaatit.
+   <br/> <br/> Yrityksillä, kuten H&M ja Lindex voi olla omia vastuullisilta kuulostavia “sertifikaatteja”, jotka eivät kuitenkaan takaa minkäänlaisia oikeita tekoja, niin kuin riippumattomien yhdistysten sertifikaatit.
     </p>
 
     <div class="number"><h1>3</h1></div>
@@ -88,5 +117,9 @@
       </ul>
   </div>
 </div>
-  </body>
-</html>
+</body>
+        </>
+    )
+}
+
+export default Blog1
