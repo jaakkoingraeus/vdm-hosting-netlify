@@ -17,6 +17,7 @@ function Search(props) {
   const changeOverlay = () => {
     setOpenOverlay(!openOverlay)
     console.log('Open overlay: ', openOverlay)
+    window.addEventListenerlocation.href = "/#search"
   }
 
   const changeOverlayData = (input) => {
@@ -62,7 +63,7 @@ function Search(props) {
         <Col>
         <div className="CarouselContainer border rounded p-3 shadow-sm d-flex flex-column justify-content-center hideScroll">
         <CardDeck className="justify-content-center">
-          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Nothing found</h5>}
+          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Hae toista yritystä</h5>}
         </CardDeck>
         </div>
         </Col>

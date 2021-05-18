@@ -24,6 +24,7 @@ const scrollTop = () => {
 }
 
 const Blog2 = () => {
+
     return (
         <>
   <head>
@@ -50,7 +51,7 @@ const Blog2 = () => {
     <div class="page">
     
     <div class="topicContainer">
-    <div class="topic">
+    <div class="topic" >
       <p>Viherpesun ehkäisy</p>
     </div>
     </div>
