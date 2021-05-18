@@ -16,7 +16,7 @@ function NavbarContainer(props) {
     <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
             <Nav.Link href="#search" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Vihertutka</Nav.Link>
-            <Nav.Link href="#campaignInfo" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Kampanja</Nav.Link>
+            <Nav.Link href="#campaignInfo" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Viherpesusta</Nav.Link>
             <Nav.Link href="#blogs" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Blogit</Nav.Link>
             <Nav.Link href="#comments" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Keskustelu</Nav.Link>
             <Nav.Link href="#about" className="navLinkCustom" style={{fontSize: 21, fontWeight: 700}}>Meistä</Nav.Link>
