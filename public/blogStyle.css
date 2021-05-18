@@ -127,6 +127,12 @@ body {
     font-size: 2rem;
 }
 
+.smalltitle h1 {
+    font-weight: bold;
+    list-style: square;
+    font-size: 1.3rem;
+}
+
 
 .topicContainer {
     display: flex;
