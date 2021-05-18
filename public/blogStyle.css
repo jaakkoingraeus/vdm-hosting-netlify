@@ -126,7 +126,9 @@ body {
 .textContent h3 {
     font-size: 2rem;
 }
-
+.p h2 {
+    font-style: italic;
+}
 
 .topicContainer {
     display: flex;
