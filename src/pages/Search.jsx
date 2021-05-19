@@ -60,7 +60,7 @@ function Search(props) {
       <Container>
       <Row className="mt-2">
         <Col>
-        <div className="CarouselContainer">
+        <div className="CarouselContainer hideScroll">
           { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile className="vihertutkaCard" key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Hae toista yritystä</h5>}
         </div>
         </Col>
