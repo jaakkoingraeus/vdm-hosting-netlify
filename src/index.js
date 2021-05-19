@@ -9,7 +9,7 @@ import {
   Route
 } from 'react-router-dom'
 import Blog2 from './pages/Blog2';
-
+import Blog3 from './pages/Blog3';
 ReactDOM.render(
   <Router>
     <Switch>
@@ -19,7 +19,8 @@ ReactDOM.render(
       <Route path="/tiedosta">
         <Blog2 />
       </Route>
-      <Route path="/">
+      <Route path="/eroon">
+        <Blog3 />
         <App />
       </Route>
     </Switch>
