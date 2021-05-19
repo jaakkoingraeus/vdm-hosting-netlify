@@ -3,9 +3,6 @@ import React from 'react'
 function Divider(props) {
 
     const bgImage = {
-        //backgroundImage: 'url('+props.imgsrc+')',
-      //  backgroundRepeat: 'no-repeat',
-       // backgroundSize: 'cover',
         width: '100vw',
         height: '20vw',
         color: props.textColor,

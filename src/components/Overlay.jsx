@@ -27,7 +27,6 @@ function Overlay(props) {
         enableScroll()
     }
     setMobile(mobileOr)
-    //console.log('Open: ', props.open)
   }, [])
   
   window.addEventListener('resize', () => {
@@ -61,14 +60,13 @@ function Overlay(props) {
     return(
         <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
            
-        <div>
+        <div className="shadow hideScroll">
         <Button variant="secondary" className="position-absolute top-0 start-0 translate-middle" onClick={ () => {
                 props.closeFunction()
                 }} disabled={!props.open}><GrClose/></Button>
         <div style={{position:"absolute", top:"0", right:"0", margin:"40px"}}>
         <img
             width="100"
-            //height="100"
             src={imagesrc}
             alt="Generic placeholder"
         />

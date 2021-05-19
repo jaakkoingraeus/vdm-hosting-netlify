@@ -16,8 +16,7 @@ function Search(props) {
   const [searchText, setSearchText] = useState("");
   const changeOverlay = () => {
     setOpenOverlay(!openOverlay)
-    console.log('Open overlay: ', openOverlay)
-    window.addEventListenerlocation.href = "/#search"
+    window.location.href = "/#search"
   }
 
   const changeOverlayData = (input) => {
