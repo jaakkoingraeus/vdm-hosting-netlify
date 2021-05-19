@@ -63,7 +63,7 @@ function Comments(props) {
         </Form>
                 </Col>
                 <Col className="d-none d-sm-none d-md-none d-lg-block">
-                    twittahh
+                <a className="twitter-timeline" dataWidth="400" dataHeight="500" href="https://twitter.com/JaakkoKulta3?ref_src=twsrc%5Etfw">Tweets by JaakkoKulta3</a>
                 </Col>
         </Row>
         </Container>
