@@ -59,6 +59,32 @@
         "animalTitle":"Eläimet",
         "animalText":"", 
         "imagesrc":"/img/marimekko-logo.png"
-    }        
+    },
+    {
+        "title":"Lindex",
+        "header":"Vihreys", 
+        "text":
+        "",
+        "natureTitle":"Ympäristö",
+        "natureText":"",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"",
+        "animalTitle":"Eläimet",
+        "animalText":"", 
+        "imagesrc":"/img/Lindex_red_CMYK.svg"
+    },
+    {
+        "title":"Mango",
+        "header":"Vihreys", 
+        "text":
+        "",
+        "natureTitle":"Ympäristö",
+        "natureText":"",
+        "peopleTitle":"Ihmiset",
+        "peopleText":"",
+        "animalTitle":"Eläimet",
+        "animalText":"", 
+        "imagesrc":"/img/mango_logo_vector (1).svg"
+    } 
     ]
 }
