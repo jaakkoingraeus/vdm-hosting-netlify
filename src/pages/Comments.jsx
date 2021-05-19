@@ -5,8 +5,8 @@ import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/p
 import {FaComment, FaThumbsUp} from 'react-icons/fa'
 
 function Comments(props) {
-    const [comments, setComments] = useState([{nickname: 'Jaahas', text:'No jo on. Törkeää tällainen kuluttajan silmään sahaaminen. Pitänee olla varovaisempi.', timestamp:1, likes:476},{nickname: 'conscious keijo', text:'Kannatan kyllä kirpputorien käyttöä ja kierrätystä. Uusia vaatteita on ihan turha ostaa.', timestamp:2, likes:542},{nickname: 'Aapelinen', text:'Omat vaatteet on henkkamaukasta ja tulee varmaan tulevaisuudessakin olemaan. Vaatteet saa sieltä niin kovin helposti.', timestamp:3, likes: 100},{nickname: 'Haapsburgeri', text:'Pistää vihaksi tällainen kuluttajan kiusaaminen. Vastuullinen eläminen on jo muutenkin aivan liian hankalaa ja sitten vielä tällaista.', timestamp:4, likes: 342}])
-    const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:'',likes: 0});
+    const [comments, setComments] = useState([{nickname: 'Jaahas', text:'No jo on. Törkeää tällainen kuluttajan silmään sahaaminen. Pitänee olla varovaisempi.', timestamp:1, likes:476, liked: false},{nickname: 'conscious keijo', text:'Kannatan kyllä kirpputorien käyttöä ja kierrätystä. Uusia vaatteita on ihan turha ostaa.', timestamp:2, likes:542, liked: false},{nickname: 'Aapelinen', text:'Omat vaatteet on henkkamaukasta ja tulee varmaan tulevaisuudessakin olemaan. Vaatteet saa sieltä niin kovin helposti.', timestamp:3, likes: 100, liked: false},{nickname: 'Haapsburgeri', text:'Pistää vihaksi tällainen kuluttajan kiusaaminen. Vastuullinen eläminen on jo muutenkin aivan liian hankalaa ja sitten vielä tällaista.', timestamp:4, likes: 342, liked: false}])
+    const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:'',likes: 0, liked: false});
   
     const addComment = () => {
         if(commentField.nickname !== "" && commentField.text !== "")
@@ -22,11 +22,13 @@ function Comments(props) {
     }
 
     const likeComment = (target) => {
+        const plusMinus = target.liked ? -1 : 1
+
         setComments(comments.map( (x)=> {
             if(x.nickname === target.nickname && x.text === target.text && x.timestamp === target.timestamp && x.likes === target.likes) 
-                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes + 1} 
+                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes + plusMinus, liked: !target.liked} 
                 else 
-                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes} }))
+                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes, liked: x.liked} }))
     }
 
     return(
@@ -49,7 +51,7 @@ function Comments(props) {
                                             <p>
                                                 {x.text}
                                             </p>
-                                            <Button onClick={() => likeComment(x)}><FaThumbsUp/></Button> {x.likes}
+                                            <Button onClick={() => likeComment(x)}  variant={x.liked ? "success" : "primary"}><FaThumbsUp/></Button> {x.likes}
                                         </Media.Body>
                                     </Media>
                                     </Card>)}
