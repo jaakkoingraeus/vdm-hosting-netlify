@@ -60,10 +60,8 @@ function Search(props) {
       <Container>
       <Row className="mt-2">
         <Col>
-        <div className="CarouselContainer border rounded p-3 shadow-sm d-flex flex-column justify-content-center hideScroll">
-        <CardDeck className="justify-content-center">
-          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Hae toista yritystä</h5>}
-        </CardDeck>
+        <div className="CarouselContainer">
+          { dataToRender.length > 0 ? dataToRender.map( (x) => <Tile className="vihertutkaCard" key={x.title} imagesrc={x.imagesrc} clickFunction={ () => changeOverlayData(x)}></Tile>) : <h5>Hae toista yritystä</h5>}
         </div>
         </Col>
       </Row>
