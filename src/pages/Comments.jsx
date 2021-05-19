@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { Media, Card, Form, Button, Container, Row, Col } from 'react-bootstrap'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
-import {FaComment} from 'react-icons/fa'
+import {FaComment, FaThumbsUp} from 'react-icons/fa'
 
 function Comments(props) {
-    const [comments, setComments] = useState([{nickname: 'Jaahas', text:'No jo on. Törkeää tällainen kuluttajan silmään sahaaminen. Pitänee olla varovaisempi.', timestamp:1},{nickname: 'conscious keijo', text:'Kannatan kyllä kirpputorien käyttöä ja kierrätystä. Uusia vaatteita on ihan turha ostaa.', timestamp:2},{nickname: 'Aapelinen', text:'Omat vaatteet on henkkamaukasta ja tulee varmaan tulevaisuudessakin olemaan. Vaatteet saa sieltä niin kovin helposti.', timestamp:3},{nickname: 'Haapsburgeri', text:'Pistää vihaksi tällainen kuluttajan kiusaaminen. Vastuullinen eläminen on jo muutenkin aivan liian hankalaa ja sitten vielä tällaista.', timestamp:4}])
-    const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:''});
+    const [comments, setComments] = useState([{nickname: 'Jaahas', text:'No jo on. Törkeää tällainen kuluttajan silmään sahaaminen. Pitänee olla varovaisempi.', timestamp:1, likes:476},{nickname: 'conscious keijo', text:'Kannatan kyllä kirpputorien käyttöä ja kierrätystä. Uusia vaatteita on ihan turha ostaa.', timestamp:2, likes:542},{nickname: 'Aapelinen', text:'Omat vaatteet on henkkamaukasta ja tulee varmaan tulevaisuudessakin olemaan. Vaatteet saa sieltä niin kovin helposti.', timestamp:3, likes: 100},{nickname: 'Haapsburgeri', text:'Pistää vihaksi tällainen kuluttajan kiusaaminen. Vastuullinen eläminen on jo muutenkin aivan liian hankalaa ja sitten vielä tällaista.', timestamp:4, likes: 342}])
+    const [commentField, setCommentField] = useState({nickname:'',text:'',timestamp:'',likes: 0});
   
     const addComment = () => {
         if(commentField.nickname !== "" && commentField.text !== "")
@@ -14,11 +14,19 @@ function Comments(props) {
     }
 
     const updateCommentFieldNickname = (input) => {
-        setCommentField({nickname: input.target.value, text: commentField.text, timestamp: Date.now()})
+        setCommentField({nickname: input.target.value, text: commentField.text, timestamp: Date.now(), likes:commentField.likes})
     }
 
     const updateCommentFieldText = (input) => {
-        setCommentField({nickname: commentField.nickname , text: input.target.value, timestamp: Date.now()})
+        setCommentField({nickname: commentField.nickname , text: input.target.value, timestamp: Date.now(), likes: commentField.likes})
+    }
+
+    const likeComment = (target) => {
+        setComments(comments.map( (x)=> {
+            if(x.nickname === target.nickname && x.text === target.text && x.likes === target.likes) 
+                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes + 1} 
+                else 
+                return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes} }))
     }
 
     return(
@@ -41,6 +49,7 @@ function Comments(props) {
                                             <p>
                                                 {x.text}
                                             </p>
+                                            <Button onClick={() => likeComment(x)}><FaThumbsUp/></Button> {x.likes}
                                         </Media.Body>
                                     </Media>
                                     </Card>)}
