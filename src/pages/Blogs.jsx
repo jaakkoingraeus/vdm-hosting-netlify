@@ -21,10 +21,10 @@ function Blogs(props) {
         <Row>
         <div className="blogContainer" style={{ minWidth: '100%'}}>
             <Link to="/5pointtia">
-                <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+                <Tile title="5 pointtia - mistä tunnistat viherpesun?"author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/Laundry.jpg" clickFunction={ () => console.log('Opening blog')}></Tile>
             </Link>
             <Link to="/tiedosta">
-                <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/blog2.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+                <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" clickFunction={ () => console.log('Opening blog')}></Tile>
             </Link>
             <Link to="/eroon">
                 <Tile title="Eroon omistamisesta" author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => console.log('Opening blog')}></Tile>
