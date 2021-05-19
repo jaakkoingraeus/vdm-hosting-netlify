@@ -33,7 +33,7 @@ function Tile(props){
     }
 
     return(
-    <Card style={{ maxWidth: '18rem', cursor:'pointer'}} className="m-3 p-3 bg-secondary text-dark justify-content-center"  border="secondary" onClick={ () => props.clickFunction()}>
+    <Card style={{minHeight: '15rem', minWidth: '15rem', maxWidth: '18rem', cursor:'pointer', scrollSnapAlign: 'start'}} className="m-3 p-3 bg-secondary text-dark justify-content-center" border="secondary" onClick={ () => props.clickFunction()}>
       {content}
     </Card>
     )

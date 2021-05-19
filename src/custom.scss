@@ -66,7 +66,7 @@ body {
 
 .navLinkCustom {
   font-size: 1.7rem;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 }
 
 //FRONTPAGE
@@ -111,6 +111,11 @@ body {
   padding: 30px;
   overflow-x: scroll;
   margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  overflow-y: hidden;
 }
 
 .overlay{

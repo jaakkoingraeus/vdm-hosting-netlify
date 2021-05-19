@@ -5,7 +5,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 
 function Video(props) {
     return(
-    <ScrollableAnchor id={'campaignInfo'}>
+    <ScrollableAnchor id={'video'}>
     <div className="page"> 
     <Container>
         <Row>
@@ -17,32 +17,23 @@ function Video(props) {
                     <Card.Body>
                         <Card.Title>Varo viherpesua! -kampanja</Card.Title>
                         <Card.Text className="campaignText">
-                    Vaateteollisuudessa koventuneet vaatimukset, kilpailu ja voiton tavoittelu ovat johtaneeet kuluttajia sokaisevaan viherpesuun. Kiillotetulla kuluttajaviestinnällä ja markkinoinnilla kätketään tuhoisat ympäristövaikutukset sekä ihmis- ja eläintenoikeusrikkomukset.
+                        Me Sitralla uskomme kestävään kehitykseen ja perustimme somevaikuttajien kanssa yhdessä Varo viherpesua! -kampanjan. Vain toimimalla yhdessä voimme jatkaa kohti vastuullisempaa huomista.
                     </Card.Text>
-                    <Card.Title>Miksi viherpesua pitäisi varoa?</Card.Title>
+                    <Card.Title>Kohteena nuoret</Card.Title>
                         <Card.Text className="campaignText">
-                   Vaatealan viherpesu on laajamittaista ja salakavalaa. Sen tunnistaminen auttaa tekemään kestäviä valintoja, jotka estävät ilmastonmuutosta, vähentävät köyhyyttä ja pelastavat henkiä. 
+                   Ilmastonmuutos tulee vaikuttamaan merkittävästi nuorten ja nuorten aikuisten elämään. Siksi otimme tehtäväksemme välittää tämä tieto juuri heille, jotka sitä eniten tarvitsevat. Pikamuoti ja vaateteollisuus kohdentavat suuren osan myynnistään juuri nuorille. Lue lisää kampanjasta <a href="#blogs">blogistamme</a>.
                     </Card.Text>
-                    <Card.Title>Me kerromme vaatteidesi todellisen vihreyden</Card.Title>
-                        <Card.Text className="campaignText">
-                   Autamme tekemään oikeita valintoja viherpesun keskellä. Uskomme, että voit näyttää hyvältä, säästää lompakkoa ja pelastaa maapalloa samaan aikaan! Lue lisää <a href="#blogs">blogista</a>.
+                    <Card.Title>Vaikuttajat</Card.Title>
+                    <Card.Text className="campaignText">
+                    Me Sitralla olemma tylsiä aikuisia, joten halusimme osallistaa nuoria parhaiten puhuttelevat henkilöt mukaan tärkeään tehtäväämme.
                     </Card.Text>
                     </Card.Body>
             </Card>
             </Col>
-            <Col className="d-none d-sm-none d-md-none d-lg-none d-xl-block">
-            <div className="statBox">
-                <h1>10%</h1>
-                <p className="statDesc">Vuotuisista globaaleista hiilidioksidipäästöistä aiheutuu vaateteollisuuden tuotannosta*</p>
-            </div>
-            <div className="statBox">
-                <h1>98%</h1>
-                <p className="statDesc">Maailman vaatetuotannon työntekijöistä ansaitsee kuukaudessa vähemmän, mitä normaali elintaso vaatii.*</p>
-            </div>
-            <div className="statBox">
-                <h1>100 milj</h1>
-                <p className="statDesc">Eläintä tapetaan vuosittain vaateollisuutta varten turkistarhauksessa*</p>
-            </div>
+            <Col className="d-block">
+                <h1 className="text-center">Lyhytelokuvamme</h1>
+                <br></br>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/779fMc8ubOo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </Col>
             
             </Row>
