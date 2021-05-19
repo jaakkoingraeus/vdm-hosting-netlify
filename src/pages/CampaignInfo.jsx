@@ -30,7 +30,7 @@ function CampaignInfo(props) {
                     </Card.Body>
             </Card>
             </Col>
-            <Col className="d-none d-sm-none d-md-none d-lg-none d-xl-block">
+            <Col>
             <div className="statBox">
                 <h1>10%</h1>
                 <p className="statDesc">Vuotuisista globaaleista hiilidioksidipäästöistä aiheutuu vaateteollisuuden tuotannosta*</p>
