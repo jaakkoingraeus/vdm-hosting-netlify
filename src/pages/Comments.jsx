@@ -23,7 +23,7 @@ function Comments(props) {
 
     const likeComment = (target) => {
         setComments(comments.map( (x)=> {
-            if(x.nickname === target.nickname && x.text === target.text && x.likes === target.likes) 
+            if(x.nickname === target.nickname && x.text === target.text && x.timestamp === target.timestamp && x.likes === target.likes) 
                 return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes + 1} 
                 else 
                 return {nickname:x.nickname,text:x.text,timestamp:x.timestamp,likes: x.likes} }))
