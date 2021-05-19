@@ -59,7 +59,7 @@ const Blog3 = () => {
     <div className="header">
         <h1>Eroon viherpesusta <br/> - vaateteollisuuden rakenneuudistuksen paikka</h1>
       <p>
-          diiba daaba
+         Vaatteiden kulutus ei ole kestävällä pohjalla
       </p>
     </div>
 
@@ -70,13 +70,13 @@ const Blog3 = () => {
         <h2>Rebekka Sihvola</h2>
         <p>Asiantuntija<br/> Sitra</p>
       </div>
-      <img src="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" alt=""/>
+      <img src="/img/vihreäPyykki.png" alt=""/>
     </div>
 
     <div className="textContent">
 
      
-    <h3>moi</h3>
+    <h3>Kaapin tuuletus</h3>
     <p>
     Osa vaatteista lojuu kaapissa käyttämättömänä suurimman osan vuodesta. Kesämekko, joka tuli ostettua vuosi sitten alennusmyynnistä on ollut käytössä ehkä pari kertaa. Vaikka en ole luopumassa siitä vielä hetkeen ja käytän sitä todennäköisesti vielä loppukesän juhlissa, vaatteen elinympäristö painottuu vaatekaappiin. Tuotteen ostaminen toi toki mielihyvää. Olin haaveillut tästä tietystä mallista kauan ja kun minulla oli mahdollisuus, ostin sen. Kapitalistinen mielihyväostaminen on kivaa, mutta lyhytaikaista.
     </p>
@@ -93,7 +93,7 @@ const Blog3 = () => {
     Pikamuodin nykyinen talousmalli perustuu suurista tuotantovolyymeista saataviin tuottoihin ja nopeaan myyntiin. Myyntitapahtuma on hetkellinen eikä yksittäisestä vaatteesta saatavaa tuottoa voida toistaa samalle kappaleelle. Mitä enemmän ja mitä nopeammin myydään, sitä enemmän tuottoa saavutetaan. Pitkällä aikajänteellä tämä malli on kestämätön, myös pikavaatemerkeille. Ratkaisuna voisi toimia järjestelmän uudistaminen sellaiseksi, että vaatteiden ostamisen sijaan kuteita voitaisiin myös vuokrata. Vuokrauspalveluiden normalisointi hyödyttäisi myös pikavaatemerkkejä. Ne voisivat saada mahdollisuuden tehdä tuottoa samoista vaatteista moneen kertaan. Paine siirtyä kestävämpiin materiaaleihin ja vastuullisempiin tuottajiin vahvistuisi, koska yksittäisten vaatekappaleiden käyttö todennäköisesti lisääntyisi. Kesämekon voisi lainata niiksi muutamaksi päiväksi, kun se on käyttäjälle tarpeellista. Muina päivinä vaatteesta pääsee nauttimaan joku muu, joissain muissa juhlissa. Tästä hyötyvät siten lopulta kaikki. Vaate, sinä, joku vieras ja maapallo.
     </p>
 
-
+      <p>"India - Varanasi - 031 - laundry on the ghats" by mckaysavage is licensed under CC BY 2.0</p>
   </div>
 </div>
   </body>

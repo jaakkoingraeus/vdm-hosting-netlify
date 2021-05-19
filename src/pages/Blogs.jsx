@@ -27,7 +27,7 @@ function Blogs(props) {
                 <Tile title="Tiedosta haitallinen viherpesu!" author="Rebekka Sihvola" subject="Tietoa kampanjasta" imagesrc="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" clickFunction={ () => console.log('Opening blog')}></Tile>
             </Link>
             <Link to="/eroon">
-                <Tile title="Eroon omistamisesta" author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/blog1.png" clickFunction={ () => console.log('Opening blog')}></Tile>
+                <Tile title="Eroon omistamisesta" author="Rebekka Sihvola" subject="Viherpesun ehkäisy" imagesrc="/img/vihreäPyykki.png" clickFunction={ () => console.log('Opening blog')}></Tile>
             </Link>
         </div>
         </Row>
