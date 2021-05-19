@@ -27,7 +27,6 @@ function Overlay(props) {
         enableScroll()
     }
     setMobile(mobileOr)
-    //console.log('Open: ', props.open)
   }, [])
   
   window.addEventListener('resize', () => {
@@ -68,7 +67,6 @@ function Overlay(props) {
         <div style={{position:"absolute", top:"0", right:"0", margin:"40px"}}>
         <img
             width="100"
-            //height="100"
             src={imagesrc}
             alt="Generic placeholder"
         />
