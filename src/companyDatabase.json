@@ -53,11 +53,11 @@
         "text":
         "",
         "natureTitle":"Ympäristö",
-        "natureText":"",
+        "natureText":"Marimekko hyödyntää osassa tuotantoaan ympäristöystävällisiä materiaaleja. Yhtiö on asettanut tavoitteeksi vähetää kasvihuonepäästöjä 20%:lla vuoteen 2025 mennessä. Ei ole kuitenkaan todisteita siitä, että Marimekko olisi tehnyt merkittäviä toimia tavoitteen edistämiseksi.",
         "peopleTitle":"Ihmiset",
-        "peopleText":"",
+        "peopleText":"Yhtiön toimitusketju on kokonaisuudessaan avoin ja se valvoo koko viimeisen vaiheen tuotantoaan. Marimekko ei ole kuitenkaan osoittanut, että työntekijöiden toimeentulon turvaava palkkataso olisi taattu koko toimitusketjussa.",
         "animalTitle":"Eläimet",
-        "animalText":"", 
+        "animalText":"Brändin tuotteissa käytetään eläinten nahkaa, karvaa ja silkkiä. Yhtiö ei käytä turkiksia, eksoottisten eläinten nahkaa tai angoraa.", 
         "imagesrc":"/img/marimekko-logo.png"
     },
     {
@@ -66,11 +66,11 @@
         "text":
         "",
         "natureTitle":"Ympäristö",
-        "natureText":"",
+        "natureText":"Lindex hyödyntää osassa tuotantoaan ympäristöystävällisiä materiaaleja. Yhtiön tavoitteena on lopettaa vaarallisten kemikaalien käyttö vuoteen 2025 mennessä, mutta tavoitteen edistymisestä ei ole todisteita. Lindex aikoo myös vähentää tuotantonsa kasvihuonepäästöjä, mutta konkreettiset teot sen eteen ovat epäselvät.",
         "peopleTitle":"Ihmiset",
-        "peopleText":"",
+        "peopleText":"Yhtiön toimitusketju on avoin, ja se julkaisee yksityiskohtaista tietoa toimittajistaan sekä niiden työntekijöiden oikeuksista, tasa-arvosta ja työoloista. Ei ole kuitenkaan todisteita siitä, että työntekijöiden toimeentulon turvaava palkkataso olisi taattu koko toimitusketjussa.",
         "animalTitle":"Eläimet",
-        "animalText":"", 
+        "animalText":"Brändillä on viralliset ohjeistukset eläinten hyvinvoinnista. Yhtiö käyttää eläinperäistä nahkaa ja karvaa, sekä non-mulesed -villaa. Yhtiö ei käytä angoraa tai turkiksia. ", 
         "imagesrc":"/img/Lindex_red_CMYK.svg"
     },
     {
@@ -79,11 +79,11 @@
         "text":
         "",
         "natureTitle":"Ympäristö",
-        "natureText":"",
+        "natureText":"Mango hyödyntää osassa tuotantoa ympäristöystävällisiä materiaaleja. Ei ole todisteita siitä, että yhtiö pyrkisi vähentämään kasvihuonepäästöjä tai tehnyt merkittäviä tekoja vaarallisten kemikaalien poistamiseksi.",
         "peopleTitle":"Ihmiset",
-        "peopleText":"",
+        "peopleText":"Yhtiö julkaisee avoimesti tietoa toimittajiensa käytänteistä, mutta ei jaa tietoa toimitusketjun työntekijöiden tasa-arvosta tai pakkotyövoimasta. Ei ole todisteita siitä, että työntekijöiden toimeentulon turvaava palkkataso olisi taattu koko toimitusketjussa.",
         "animalTitle":"Eläimet",
-        "animalText":"", 
+        "animalText":"Yhtiö on julkaissut esityksen eläinkärsimyksen minimoimisesta, mutta sillä ei ole virallisia ohjeistuksia eläinten hyvinvoinnista. Mango käyttää tuotannossaan eläinperäistä nahkaa ja karvaa, mutta ei turkiksia tai angoraa.", 
         "imagesrc":"/img/mango_logo_vector (1).svg"
     } 
     ]
