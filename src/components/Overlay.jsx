@@ -60,7 +60,7 @@ function Overlay(props) {
     return(
         <Fade in={props.open} appear={true} className="overlay" style={pointerevents}>
            
-        <div>
+        <div className="shadow hideScroll">
         <Button variant="secondary" className="position-absolute top-0 start-0 translate-middle" onClick={ () => {
                 props.closeFunction()
                 }} disabled={!props.open}><GrClose/></Button>
