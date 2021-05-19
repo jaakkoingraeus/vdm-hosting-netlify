@@ -33,7 +33,7 @@ function Comments(props) {
         </Row>
         <Row>
             <Col>
-            <div  className="hideScroll"style={{overflow:"scroll", maxHeight: "40vh"}}>
+            <div  className="hideScroll"style={{overflow:"scroll", maxHeight: "70vh"}}>
                 {comments.map( (x ,y) => <Card className="p-3 m-2 shadow-sm" key={x.nickname + x.timestamp + y}>
                                         <Media>
                                         <Media.Body>
