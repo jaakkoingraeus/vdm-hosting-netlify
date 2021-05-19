@@ -25,7 +25,7 @@ function Video(props) {
                     </Card.Text>
                     <Card.Title>Vaikuttajat</Card.Title>
                     <Card.Text className="campaignText">
-                    Me Sitralla olemma tylsiä aikuisia, joten halusimme osallistaa nuoria parhaiten puhuttelevat henkilöt mukaan tärkeään tehtäväämme.
+                    Me Sitralla olemma tylsiä aikuisia, joten halusimme osallistaa nuoria parhaiten puhuttelevat henkilöt mukaan tärkeään tehtäväämme. Siksi tarjosimme vaikuttajille mahdollisuuden kuvata juuri sellaista sisältöä jota he kokivat merkityksellisiksi. Tuloksena oli Varo Viherpesua! -lyhytelokuva.
                     </Card.Text>
                     </Card.Body>
             </Card>
