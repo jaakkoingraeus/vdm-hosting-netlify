@@ -21,8 +21,7 @@ ReactDOM.render(
       </Route>
       <Route path="/eroon">
         <Blog3 />
-        <App />
-      </Route>
+      </Route><App />
     </Switch>
   </Router>
   
