@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../components/Header.jsx'
 import ScrollableAnchor from 'react-scrollable-anchor' //https://www.npmjs.com/package/react-scrollable-anchor
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col, Card, ResponsiveEmbed } from 'react-bootstrap'
 
 function Video(props) {
     return(
@@ -33,7 +33,9 @@ function Video(props) {
             <Col className="d-block">
                 <h1 className="text-center">Lyhytelokuvamme</h1>
                 <br></br>
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/779fMc8ubOo" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                <ResponsiveEmbed aspectRatio="16by9">
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/779fMc8ubOo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </ResponsiveEmbed>
             </Col>
             
             </Row>
