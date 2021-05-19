@@ -60,7 +60,7 @@ function Comments(props) {
             <Form>
             <Row>
                 <Col>
-                <Form.Control type="text" placeholder="Nickname" className="me-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
+                <Form.Control type="text" placeholder="Nimimerkki" className="me-sm-2 shadow-sm" onChange={ (x) => updateCommentFieldNickname(x)}/>
                 </Col>
                 <Col xs={3}>
                 <Button variant="outline-success" className="me-sm-2 shadow-sm" onClick={() => addComment()}><FaComment/></Button>
@@ -68,7 +68,7 @@ function Comments(props) {
             </Row>
             <Row className="mt-3">
                 <Col>
-              <Form.Control type="text" placeholder="Text" maxLength="140" as="textarea" className="shadow-sm" onChange={ (x) => updateCommentFieldText(x)}/>
+              <Form.Control type="text" placeholder="Kommentti" maxLength="140" as="textarea" className="shadow-sm" onChange={ (x) => updateCommentFieldText(x)}/>
               </Col>
               </Row>
         </Form>
