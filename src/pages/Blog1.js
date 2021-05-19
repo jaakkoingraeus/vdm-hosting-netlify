@@ -68,8 +68,10 @@ const Blog1 = () => {
         <h2>Rebekka Sihvola</h2>
         <p>Asiantuntija<br/> Sitra</p>
       </div>
-      <img src="/img/morning-brew-M1n5CWH2xKI-unsplash.jpeg" alt=""/>
+      <img src="/img/Laundry.jpg" alt=""/>
+      
     </div>
+
 
     <div class="textContent">
 
@@ -84,9 +86,9 @@ const Blog1 = () => {
     <p>
     Vaateteollisuudella on itsenäisiä ja riippumattomien toimijoiden merkeille antamia sertifikaatteja. Tällaiset ovat toimiva peruste vaatteen vastuullisuudesta. Hyviä sertifikaatteja ovat esimerkiksi:
     <div class="list">
-    <h2>	Bluesign</h2> – Tuotantoprosessit, sellaisia että resursseja olisi käytetty ympäristön suojelun kannalta mahdollisimman tehokkaasti. 
-    <h2>	GOTS eli Global Organic Textile Standard </h2>– Tekstiili on ekologinen ja eettinen. Huomioidaan vaatteen koko elinkaari ja myönnetään vain luomukuiduille.
-    <h2>	Ökö-Tex 100</h2> – Ympäristö- ja tuoteturvallisuusmerkki, joka rajoittaa tiettyjen haittakemikaalien käyttöä. Ei takaa luomukankaiden käyttöä.</div>
+    <h2>	Bluesign</h2>  Tuotantoprosessit, sellaisia että resursseja olisi käytetty ympäristön suojelun kannalta mahdollisimman tehokkaasti. 
+    <h2>	GOTS eli Global Organic Textile Standard </h2> Tekstiili on ekologinen ja eettinen. Huomioidaan vaatteen koko elinkaari ja myönnetään vain luomukuiduille.
+    <h2>	Ökö-Tex 100</h2>  Ympäristö- ja tuoteturvallisuusmerkki, joka rajoittaa tiettyjen haittakemikaalien käyttöä. Ei takaa luomukankaiden käyttöä.</div>
    <br/> <br/> Yrityksillä, kuten H&M ja Lindex voi olla omia vastuullisilta kuulostavia “sertifikaatteja”, jotka eivät kuitenkaan takaa minkäänlaisia oikeita tekoja, niin kuin riippumattomien yhdistysten sertifikaatit.
     </p>
 
@@ -114,6 +116,7 @@ const Blog1 = () => {
         <li><a href="https://eetti.fi/2020/01/30/zalando-viherpesulassa/">"Zalando viherpesulassa"</a></li>
         <li><a href="https://kuluttaja.fi/artikkelit/viherpesua-vai-vastuullisuutta-kuluttaja-pyysi-asiantuntijaa-arvioimaan-vaateketjujen-omat-vastuullisuusmerkit/">"Viherpesua vai vastuullisuutta -kuluttaja pyysi asiantuntijaa arvioimaan vaateketjujen omat vastuullisuusmerkit"</a></li>
         <li><a href="https://sugar-universe.com/viherpesun-abc-ota-vastuullisuustermisto-haltuun/">"Viherpesun ABC - Ota vastuullisuustermistö haltuun""</a></li>
+        <li>Kuva: "Laundry" by Average Jane is licensed under CC BY 2.0</li>
       </ul>
   </div>
 </div>
