@@ -34,7 +34,7 @@ function Video(props) {
                 <h1 className="text-center">Lyhytelokuvamme</h1>
                 <br></br>
                 <ResponsiveEmbed aspectRatio="16by9">
-            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/779fMc8ubOo" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ontXrZaSGLc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </ResponsiveEmbed>
             </Col>
             
