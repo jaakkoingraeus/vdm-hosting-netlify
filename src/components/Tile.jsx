@@ -7,8 +7,6 @@ function Tile(props){
     let content = ""
     let authorBox = ""
 
-    const addClass = props.className ? props.className : ""
-
     if (props.author !== "") {
       authorBox = <Card.Text>
         {props.author ? `By ${props.author}` : ""}
