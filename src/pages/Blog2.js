@@ -76,13 +76,13 @@ const Blog2 = () => {
 
     <div className="textContent">
 
-    <div className="number"><h1>1</h1></div>   
+     
     <h3>Todellinen vastuullisuus esille</h3>
     <p>
         Vihreät arvot. Kestävä tulevaisuus. Läpinäkyvyys.  Nämä ovat tuttuja sloganeita niin suurten kuin keskikokoistenkin yritysten markkinoinnissa. Kampanjasivuston Vihertutka nostaa yritysten todellisen vastuullisuuden esiin ja tarjoaa kuluttajalle mahdollisuuden tarkastella kulutusvaihtoehtoja läheltä. Suomalaiset ovat yhä kiinnostuneempia vaatteidensa alkuperästä, mutta oikeasti vastuullisten toimijoiden löytäminen vaatii tutkimista ja laajempaa uteliaisuutta. Pyrkimyksenä onkin lisätä kuluttajien ja varsinkin nuorten ajattelua vaatteiden hankkimisessa.  Ekologiset ajattelutavat voivat toimia itseään rikastuttavina tekijänä, jotka tekevät onnistuessaan vastuullisuuden arvostamisesta tavallista. Optimaalisin tilanne on sellainen, jossa ostaessaan tulevaisuudessa vaatteita kuluttajat päätyvät automaattisesti kestäviin vaihtoehtoihin. Tämä on pitkä prosessi, jonka tavoitteena on se, että kuluttajat ovat perillä vaatteittensa alkuperästä.
     </p>
 
-    <div className="number"><h1>2</h1></div>
+    
     <h3>Nuoret valokeilassa</h3>
     <p>
         Kampanjassa äänessä ovat Sitran asiantuntijat, mutta myös nuoret sosiaalisen median vaikuttajat. He toimivat kampanjan päätoimisina ääninä, joiden sisältö painottuu sosiaaliseen mediaan, kuten Instagramiin ja TikTokiin. Kampanjan videot, kuvat ja muu sisältö on kerätty tekijöiden kanssa sisältöpäivänä. Tämän ajankohdan pääasiallinen tarkoitus oli luoda yhteisymmärrystä ja räjähtävää sisältöä yhteistyössä Sitran kanssa. Teemoina toimivat ekologisuus identiteetin rinnalla, vastuullisuus ja counter culture. Kuvitus painottuu pesukoneikonografiaan, metaforiin ja satiiriseen sisältöön. Näiden tavoite on luoda shokkiarvoa ja laajempaa keskustelua aiheiden ympärille. Pääasiallisten kanavien lisäksi kampanjamme sisältöä jaetaan Twitterissä hashtagin #viherpesu kautta, jonne kampanjasivujen käyttäjät kommentoivat. Keskustelua käydään myös kampanjan omien verkkosivujen keskusteluosiossa.
