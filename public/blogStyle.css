@@ -13,7 +13,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 1224px;
+    width: 100vw;
+    max-width: 1920px;
+    background-color: turquoise;
 }
 
 .backNavBar {
